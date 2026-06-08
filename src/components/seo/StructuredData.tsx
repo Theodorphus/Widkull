@@ -7,7 +7,7 @@ export function StructuredData() {
     '@id': `${BUSINESS.siteUrl}/#business`,
     name: BUSINESS.name,
     image: `${BUSINESS.siteUrl}/images/og/wildkull-og.png`,
-    logo: `${BUSINESS.siteUrl}/images/logo.svg`,
+    logo: `${BUSINESS.siteUrl}/images/logo-full.png`,
     description:
       'Lönehantering, interimstöd, effektivisering och samarbete med redovisningsbyråer. Lönehantering som skapar trygghet och frigör tid.',
     url: BUSINESS.siteUrl,

@@ -1,4 +1,5 @@
 import { Metadata } from 'next'
+import Image from 'next/image'
 import Link from 'next/link'
 import { ShieldCheck, Heart, GraduationCap, Sparkles } from 'lucide-react'
 import { SectionWrapper } from '@/components/ui/SectionWrapper'
@@ -18,26 +19,28 @@ export const metadata: Metadata = {
   },
 }
 
+// Veronikas egna värderingar (från hennes ”Vision och värderingar”): noggrannhet,
+// ständig förbättring, starkt engagemang – samt den personliga servicen hon lyfter.
 const VALUES = [
   {
     icon: ShieldCheck,
-    title: 'Trygghet',
-    description: 'Korrekt lön i tid, enligt lagar och kollektivavtal. Känsliga uppgifter i säkra händer.',
+    title: 'Noggrannhet',
+    description: 'Korrekt lön i tid, enligt gällande lagar och avtal. Känsliga uppgifter i säkra händer.',
   },
   {
     icon: Heart,
-    title: 'Personligt',
-    description: 'Du har alltid samma kontaktperson – någon som lär känna ditt företag på riktigt.',
+    title: 'Personlig service',
+    description: 'Skräddarsydda lösningar anpassade efter varje kunds unika behov – med en fast kontaktperson.',
   },
   {
     icon: GraduationCap,
-    title: 'Erfarenhet',
-    description: 'Lång erfarenhet av lön, HR och rådgivning i olika branscher och bolag.',
+    title: 'Lång erfarenhet',
+    description: 'Över ett decennium i lönebranschen – från löneadministratör och teamleader till lönechef.',
   },
   {
     icon: Sparkles,
-    title: 'Pedagogiskt',
-    description: 'Vi förklarar krångliga löneregler på ett begripligt sätt – för dig och dina anställda.',
+    title: 'Ständig förbättring',
+    description: 'En passion för att effektivisera, digitalisera och utveckla löneprocesser steg för steg.',
   },
 ]
 
@@ -56,39 +59,87 @@ export default function OmOss() {
             <MaskText>Hej, jag heter Veronika</MaskText>
           </h1>
           <MemReveal as="p" delay={150} className="mem-fade text-xl text-cream/90 font-light">
-            Senior lönekonsult och grundare av Wildkull Payroll AB.
+            Senior lönekonsult och grundare – i lönebranschen sedan 2011.
           </MemReveal>
         </div>
       </section>
 
-      {/* Berättelse + värden */}
+      {/* Porträtt + berättelse */}
       <SectionWrapper>
-        <Reveal className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16 items-start">
+        <Reveal className="grid grid-cols-1 lg:grid-cols-[minmax(0,360px)_1fr] gap-10 lg:gap-14 mb-16 items-start">
+          {/* Porträtt */}
+          <div className="relative mx-auto w-full max-w-[360px]">
+            <div className="absolute -inset-3 rounded-3xl bg-brand-green/5 blur-2xl" />
+            <div className="relative overflow-hidden rounded-3xl border border-[#E6E2D5] shadow-[0_30px_60px_-30px_rgba(44,71,51,0.45)]">
+              <Image
+                src="/images/veronika.jpg"
+                alt="Veronika Wildkull, senior lönekonsult och grundare av Wildkull Payroll AB"
+                width={1080}
+                height={1080}
+                className="w-full h-auto object-cover"
+                priority
+              />
+            </div>
+            <p className="mt-4 text-center">
+              <span className="block font-display text-lg font-bold text-[#23332A]">
+                Veronika Wildkull
+              </span>
+              <span className="block text-sm text-gray-500">
+                Senior lönekonsult &amp; grundare
+              </span>
+            </p>
+          </div>
+
+          {/* Berättelse */}
           <div>
             <h2 className="font-display text-3xl font-bold text-[#23332A] mb-6">
-              <MaskText>Lite om mig</MaskText>
+              <MaskText>Kvinnan bakom Wildkull Payroll</MaskText>
             </h2>
-            {/* PLATSHÅLLARTEXT – ersätt med Veronikas egna ord */}
             <p className="text-lg text-gray-600 mb-4">
-              Jag är Veronika Wildkull och driver Wildkull Payroll AB. Med många år bakom mig
-              som lönekonsult hjälper jag företag, organisationer och redovisningsbyråer att få
-              ordning och trygghet i sin lönehantering.
+              Jag är utbildad löneekonom med examen från Frans Schartaus Handelsinstitut i
+              Stockholm och har arbetat i lönebranschen sedan 2011. Under åren har jag haft
+              flera olika roller – löneadministratör, teamleader och lönechef – och deltagit i
+              flera implementationsprojekt.
             </p>
             <p className="text-lg text-gray-600 mb-4">
-              Lön är mer än siffror – det handlar om förtroende. När lönen är rätt och kommer i
-              tid skapas trygghet för både arbetsgivare och anställda. Min ambition är att ta hand
-              om det med samma omsorg som om det vore mitt eget bolag.
+              Som lönechef har jag byggt upp en löneavdelnings processer från grunden. Jag
+              digitaliserade verksamheten och skapade rutiner, checklistor och handledningar.
+              Jag har också varit med i ett omfattande projekt där jag säkerställde att de
+              lönerelaterade uppgifterna hanterades korrekt vid implementeringen av ett HR-system.
+            </p>
+            <p className="text-lg text-gray-600 mb-4">
+              Idag driver jag eget företag där jag erbjuder expertis inom outsourcing av
+              lönehantering, processoptimering och utbildning. I mina uppdrag har jag
+              effektiviserat löneprocesser, minskat onödiga arbetsmoment och gett stöd åt chefer
+              på löneavdelningar. Med en förmåga att identifiera och rätta felaktigheter – och en
+              genuin passion för att förbättra och utveckla – är jag en engagerad och pålitlig
+              partner för företag som vill ha en smidig och korrekt löneadministration.
             </p>
             <p className="text-lg text-gray-700 font-medium border-l-4 border-gold-accent pl-4 italic">
               ”{BUSINESS.motto}.”
             </p>
-            <p className="mt-6 text-sm text-gray-400">
-              (Platshållartext – fyll gärna i din egen berättelse, erfarenhet och eventuella omdömen.)
+          </div>
+        </Reveal>
+
+        {/* Vision & värderingar */}
+        <Reveal className="grid grid-cols-1 lg:grid-cols-2 gap-10 mb-16 items-start">
+          <div className="bg-dark-section text-cream rounded-2xl p-8 sm:p-10">
+            <h3 className="font-display text-2xl font-bold mb-4">Vår vision</h3>
+            <p className="text-cream/85 leading-relaxed mb-6">
+              Att vara det självklara valet för företag som vill ha en smidig, digitaliserad och
+              korrekt lönehantering.
+            </p>
+            <h3 className="font-display text-2xl font-bold mb-4">Våra värderingar</h3>
+            <p className="text-cream/85 leading-relaxed">
+              Noggrannhet, ständig förbättring och ett starkt engagemang. Med skräddarsydda
+              lösningar anpassade efter just ditt företags behov erbjuder jag både
+              helhetslösningar och stöd inom specifika delar av lönehanteringen – med dina behov
+              i fokus och målet att skapa långsiktiga samarbeten.
             </p>
           </div>
 
-          <div className="bg-[#F3F1E9] p-8 rounded-2xl border border-[#E6E2D5]">
-            <h3 className="text-2xl font-bold text-[#23332A] mb-6">Det här står vi för</h3>
+          <div className="bg-[#F3F1E9] p-8 sm:p-10 rounded-2xl border border-[#E6E2D5]">
+            <h3 className="text-2xl font-bold text-[#23332A] mb-6">Det här står jag för</h3>
             <ul className="space-y-5">
               {VALUES.map((v) => (
                 <li key={v.title} className="flex gap-4">

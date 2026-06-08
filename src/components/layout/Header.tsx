@@ -30,12 +30,12 @@ export function Header() {
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-18">
         {/* Logo + Företagsnamn */}
         <Link href="/" className="group flex items-center gap-3">
-          <div className="relative h-9 w-9 flex-shrink-0">
+          <div className="relative h-10 w-11 flex-shrink-0">
             <Image
-              src="/images/logo.svg"
+              src="/images/owl-crest.png"
               alt="Wildkull Payroll AB logotyp"
               fill
-              sizes="36px"
+              sizes="44px"
               className="object-contain"
               priority
             />
@@ -45,7 +45,7 @@ export function Header() {
               Wildkull Payroll AB
             </span>
             <span className="hidden sm:block text-[10px] text-[#1A1A1A]/60 font-semibold tracking-[0.18em] uppercase mt-1">
-              Lönehantering · Interimskonsult · Rådgivning
+              Lönehantering · Effektivisering · Rådgivning
             </span>
           </div>
         </Link>

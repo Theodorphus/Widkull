@@ -6,14 +6,14 @@ import { MeshBackground } from '@/components/premium/MeshBackground'
 import { Parallax, Reveal } from '@/components/premium/Scroll'
 import { MaskText, MemReveal } from '@/components/memorial/MemReveal'
 import { CTABanner } from '@/components/home/CTABanner'
-import { SERVICES } from '@/lib/data/services'
+import { VISIBLE_SERVICES } from '@/lib/data/services'
 import { serviceIcons } from '@/lib/data/serviceIcons'
 import { BUSINESS } from '@/lib/data/business'
 
 export const metadata: Metadata = {
   title: 'Våra tjänster – Lönehantering, interim & rådgivning',
   description:
-    'Lönehantering, interimskonsult, effektivisering och samarbete med redovisningsbyråer. Flexibla lönelösningar för företag och byråer.',
+    'Lönehantering, effektivisering och interimskonsult. Flexibla lönelösningar för företag och organisationer.',
   alternates: {
     canonical: `${BUSINESS.siteUrl}/tjanster`,
   },
@@ -34,8 +34,8 @@ export default function TjansterPage() {
             <MaskText>Våra tjänster</MaskText>
           </h1>
           <MemReveal as="p" delay={150} className="mem-fade text-xl text-cream/85 font-light max-w-2xl mx-auto">
-            Flexibla lösningar inom lön, rådgivning och effektivisering – för företag,
-            organisationer och redovisningsbyråer.
+            Flexibla lösningar inom lön, rådgivning och effektivisering – för
+            företag och organisationer.
           </MemReveal>
         </div>
       </section>
@@ -43,7 +43,7 @@ export default function TjansterPage() {
       {/* Tjänster */}
       <section className="py-16 sm:py-20 px-4 sm:px-6 lg:px-8 bg-[#F3F1E9]">
         <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
-          {SERVICES.map((service, i) => (
+          {VISIBLE_SERVICES.map((service, i) => (
             <Reveal key={service.slug} delay={i * 100} className="h-full">
               <Link href={`/${service.slug}`} className="block h-full group">
                 <div className="card-lift h-full flex flex-col bg-white rounded-2xl p-7 sm:p-8 border border-[#E6E2D5] shadow-[0_4px_24px_rgba(44,71,51,0.06)]">

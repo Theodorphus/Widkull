@@ -3,6 +3,8 @@ export interface NavItem {
   href: string
 }
 
+import { VISIBLE_SERVICES } from './services'
+
 export interface NavDropdownItem extends NavItem {
   slug: string
 }
@@ -14,16 +16,13 @@ export const MAIN_NAV: NavItem[] = [
   { label: 'Kontakt', href: '/kontakt' },
 ]
 
-export const SERVICES_NAV: NavDropdownItem[] = [
-  { label: 'Lönehantering', href: '/lonehantering', slug: 'lonehantering' },
-  { label: 'Interimskonsult', href: '/interimskonsult', slug: 'interimskonsult' },
-  { label: 'Effektivisering', href: '/effektivisering', slug: 'effektivisering' },
-  {
-    label: 'Samarbete redovisningsbyråer',
-    href: '/samarbete-redovisningsbyraer',
-    slug: 'samarbete-redovisningsbyraer',
-  },
-]
+// Härleds från tjänstedatan så meny, grid och ordning alltid är i synk.
+// Dolda tjänster (t.ex. ej bekräftade förslag) filtreras bort automatiskt.
+export const SERVICES_NAV: NavDropdownItem[] = VISIBLE_SERVICES.map((service) => ({
+  label: service.title,
+  href: `/${service.slug}`,
+  slug: service.slug,
+}))
 
 export const FOOTER_LINKS: NavItem[] = [
   { label: 'Hem', href: '/' },

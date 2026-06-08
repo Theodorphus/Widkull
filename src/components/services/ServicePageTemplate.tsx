@@ -10,7 +10,7 @@ import { Button } from '@/components/ui/Button'
 import { Reveal, Stagger } from '@/components/premium/Scroll'
 import { TiltCard } from '@/components/premium/Effects'
 import { ServiceData } from '@/types/service'
-import { SERVICES } from '@/lib/data/services'
+import { VISIBLE_SERVICES } from '@/lib/data/services'
 import { BUSINESS } from '@/lib/data/business'
 
 interface ServicePageTemplateProps {
@@ -135,7 +135,7 @@ export function ServicePageTemplate({
 
       {/* Related Services */}
       <RelatedServicesSection
-        relatedServices={SERVICES}
+        relatedServices={VISIBLE_SERVICES}
         currentServiceSlug={service.slug}
       />
 

@@ -2,11 +2,11 @@ import Link from 'next/link'
 import { ArrowRight } from 'lucide-react'
 import { Reveal } from '@/components/premium/Scroll'
 import { MaskText } from '@/components/memorial/MemReveal'
-import { SERVICES } from '@/lib/data/services'
+import { VISIBLE_SERVICES } from '@/lib/data/services'
 import { serviceIcons } from '@/lib/data/serviceIcons'
 
 /**
- * TJÄNSTER – fyra kort enligt Wildkulls önskade design.
+ * TJÄNSTER – kort enligt Wildkulls önskade design.
  * Rena kort med ikoncirkel, kort beskrivning och "Läs mer".
  */
 export function ServicesGrid() {
@@ -26,8 +26,8 @@ export function ServicesGrid() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 sm:gap-6">
-          {SERVICES.map((service, i) => (
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6">
+          {VISIBLE_SERVICES.map((service, i) => (
             <Reveal key={service.slug} delay={i * 100} className="h-full">
               <Link href={`/${service.slug}`} className="block h-full group">
                 <div className="card-lift card-sheen h-full flex flex-col bg-white rounded-2xl p-6 sm:p-7 border border-[#E6E2D5] shadow-[0_4px_24px_rgba(44,71,51,0.06)]">

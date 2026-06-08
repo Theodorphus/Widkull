@@ -26,4 +26,9 @@ export interface ServiceData {
   photoSrc?: string
   keyPoints?: KeyPoint[]
   faq?: FAQ[]
+  /**
+   * Dölj tjänsten från meny och tjänstegrid (sidan finns kvar men listas inte).
+   * Används för tjänster vi föreslår men som kunden ännu inte bekräftat.
+   */
+  hidden?: boolean
 }

@@ -10,10 +10,10 @@ interface RelatedServicesSectionProps {
 }
 
 const CARD_GRADIENT: Record<string, string> = {
-  lonehantering: 'from-[#2C4733] via-[#3A5A40] to-[#8FAE8B]',
-  interimskonsult: 'from-[#203424] via-[#3A5A40] to-[#B89B5E]',
-  effektivisering: 'from-[#3A5A40] via-[#4f7556] to-[#8FAE8B]',
-  'samarbete-redovisningsbyraer': 'from-[#2C4733] via-[#4f7556] to-[#B89B5E]',
+  lonehantering: 'from-[#284035] via-[#375546] to-[#8FAE8B]',
+  interimskonsult: 'from-[#1E2E26] via-[#375546] to-[#9C993C]',
+  effektivisering: 'from-[#375546] via-[#4f7556] to-[#8FAE8B]',
+  'samarbete-redovisningsbyraer': 'from-[#284035] via-[#4f7556] to-[#9C993C]',
 }
 
 /**

@@ -5,7 +5,7 @@
 export const BUSINESS = {
   name: 'Wildkull Payroll AB',
   shortName: 'Wildkull Payroll',
-  tagline: 'Lönehantering · Interimskonsult · Rådgivning',
+  tagline: 'Lönehantering · Effektivisering · Rådgivning',
   /** Veronikas personliga ledord. */
   motto: 'Lönehantering som skapar trygghet och frigör tid',
   owner: 'Veronika Wildkull',

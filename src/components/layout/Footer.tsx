@@ -8,15 +8,15 @@ export function Footer() {
   const currentYear = new Date().getFullYear()
 
   return (
-    <footer className="bg-[#2C4733] text-cream/90">
+    <footer className="bg-[#284035] text-cream/90">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 sm:gap-10 mb-10">
 
           {/* Företagsinfo */}
           <div className="md:col-span-1">
             <div className="flex items-center gap-3 mb-4">
-              <div className="relative h-9 w-9 flex-shrink-0">
-                <Image src="/images/logo.svg" alt="" fill sizes="36px" className="object-contain" />
+              <div className="relative h-10 w-11 flex-shrink-0">
+                <Image src="/images/owl-crest.png" alt="" fill sizes="44px" className="object-contain" />
               </div>
               <span className="font-display font-extrabold text-cream text-[15px] leading-tight">
                 {BUSINESS.name}

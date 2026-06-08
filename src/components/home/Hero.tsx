@@ -41,8 +41,8 @@ export function Hero() {
           </h1>
 
           <MemReveal as="p" delay={300} className="mem-fade text-base sm:text-xl text-cream/85 leading-relaxed mb-9 font-light max-w-xl">
-            Outsourcing, interimstöd, effektivisering och samarbete med
-            redovisningsbyråer – med en personlig lönekonsult vid din sida.
+            Outsourcing av lön, effektivisering och interimstöd – med en
+            personlig och erfaren lönekonsult vid din sida.
           </MemReveal>
 
           <MemReveal delay={420} className="mem-fade flex flex-col sm:flex-row gap-3">

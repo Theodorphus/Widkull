@@ -178,6 +178,9 @@ export const SERVICES: ServiceData[] = [
   },
   {
     slug: 'samarbete-redovisningsbyraer',
+    // Föreslagen tjänst – finns inte på kundens nuvarande sida ännu.
+    // Dold från meny/grid tills Veronika bekräftat att hon vill erbjuda den.
+    hidden: true,
     title: 'Samarbete med redovisningsbyråer',
     seoTitle: 'Lönepartner för redovisningsbyråer | Wildkull Payroll AB',
     seoDescription:
@@ -233,6 +236,27 @@ export const SERVICES: ServiceData[] = [
     ],
   },
 ]
+
+/**
+ * Visningsordning för tjänster i meny och grid – matchar kundens nuvarande
+ * sida: Lönehantering → Effektivisering → Interimskonsult.
+ */
+const SERVICE_ORDER = [
+  'lonehantering',
+  'effektivisering',
+  'interimskonsult',
+  'samarbete-redovisningsbyraer',
+] as const
+
+/** Alla tjänster i rätt visningsordning (inkl. dolda). */
+export const ORDERED_SERVICES: ServiceData[] = [...SERVICES].sort(
+  (a, b) => SERVICE_ORDER.indexOf(a.slug as never) - SERVICE_ORDER.indexOf(b.slug as never),
+)
+
+/** Tjänster som ska visas i meny och grid (dolda bortfiltrerade), i rätt ordning. */
+export const VISIBLE_SERVICES: ServiceData[] = ORDERED_SERVICES.filter(
+  (service) => !service.hidden,
+)
 
 export function getServiceBySlug(slug: string): ServiceData | undefined {
   return SERVICES.find((service) => service.slug === slug)

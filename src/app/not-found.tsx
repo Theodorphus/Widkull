@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { SERVICES } from '@/lib/data/services'
+import { VISIBLE_SERVICES } from '@/lib/data/services'
 
 export default function NotFound() {
   return (
@@ -34,7 +34,7 @@ export default function NotFound() {
       <div className="border-t border-gray-100 pt-10 w-full max-w-lg">
         <p className="text-sm text-gray-400 mb-4 uppercase tracking-wide font-semibold">Populära tjänster</p>
         <div className="flex flex-wrap justify-center gap-2">
-          {SERVICES.map((service) => (
+          {VISIBLE_SERVICES.map((service) => (
             <Link
               key={service.slug}
               href={`/${service.slug}`}

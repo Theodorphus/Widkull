@@ -28,11 +28,11 @@ export function OwlSection() {
               <div className="relative mx-auto w-52 sm:w-64 lg:w-full">
                 <div className="absolute inset-0 rounded-full bg-brand-green/5 blur-2xl" />
                 <Image
-                  src="/images/owl-mascot.svg"
+                  src="/images/owl-crest.png"
                   alt="Löneugglan – Wildkull Payrolls maskot"
-                  width={320}
-                  height={340}
-                  className="relative float-icon w-full h-auto"
+                  width={436}
+                  height={386}
+                  className="relative float-icon w-full h-auto drop-shadow-[0_12px_24px_rgba(40,64,53,0.35)]"
                   priority
                 />
               </div>

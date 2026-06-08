@@ -1,13 +1,14 @@
 import { MetadataRoute } from 'next'
-import { getAllServiceSlugs } from '@/lib/data/services'
+import { VISIBLE_SERVICES } from '@/lib/data/services'
 
 const BASE_URL = 'https://wildkullpayroll.se'
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date()
 
-  const servicePages = getAllServiceSlugs().map((slug) => ({
-    url: `${BASE_URL}/${slug}`,
+  // Endast synliga tjänster i sitemap – dolda förslag listas inte.
+  const servicePages = VISIBLE_SERVICES.map((service) => ({
+    url: `${BASE_URL}/${service.slug}`,
     lastModified: now,
     changeFrequency: 'monthly' as const,
     priority: 0.9,

@@ -13,26 +13,27 @@
   --color-surface-green: #E9EFE7;
   --color-surface-slate: #F3F1E9;
 
-  /* Varumärkesfärger – Wildkull Payroll (dämpad, elegant skogsgrön) */
-  --color-brand-green: #3A5A40;
-  --color-brand-green-dark: #2C4733;
+  /* Varumärkesfärger – Wildkull Payroll (exakta märkesfärger, HEX #375546) */
+  --color-brand-green: #375546;
+  --color-brand-green-dark: #284035;
   --color-brand-green-light: #A9C2A6;
   --color-brand-green-lighter: #E9EFE7;
 
   /* Djup CTA-/sektionsfärg – mörk skogsgrön för kontrast */
-  --color-dark-section: #2C4733;
+  --color-dark-section: #284035;
 
   /* Primärfärger (mapped till grön-paletten) */
-  --color-navy: #3A5A40;
-  --color-petrol: #2C4733;
+  --color-navy: #375546;
+  --color-petrol: #284035;
 
   /* Premium grön-palett (hero, sektioner, om, kontakt) */
-  --color-forest-deep: #203424;
-  --color-forest: #2C4733;
-  --color-forest-mid: #3A5A40;
+  --color-forest-deep: #1E2E26;
+  --color-forest: #284035;
+  --color-forest-mid: #375546;
   --color-leaf: #8FAE8B;
   --color-cream: #F3F1E9;
-  --color-gold-accent: #B89B5E;
+  /* Oliv/guld-accent – exakt märkesfärg, HEX #9C993C */
+  --color-gold-accent: #9C993C;
 
   /* Memorial-palett (gravstenssidan) – slate, off-white, guld, djup svart */
   --color-memorial-ink: #1C1F22;
@@ -86,7 +87,7 @@ a:focus-visible,
 input:focus-visible,
 textarea:focus-visible,
 select:focus-visible {
-  outline: 2px solid #3A5A40;
+  outline: 2px solid #375546;
   outline-offset: 2px;
 }
 
@@ -119,7 +120,7 @@ a {
 }
 
 a:hover {
-  color: #3A5A40;
+  color: #375546;
 }
 
 /* Image optimization */
@@ -132,7 +133,7 @@ img {
 
 /* Selection styling */
 ::selection {
-  background-color: #3A5A40;
+  background-color: #375546;
   color: white;
 }
 
@@ -233,12 +234,12 @@ img {
 
 /* Mörk grön mesh – för heroes/CTA med ljus text ovanpå */
 .mesh-forest {
-  background-color: #2C4733;
+  background-color: #284035;
   background-image:
     radial-gradient(at 18% 22%, rgba(143, 174, 139, 0.40) 0px, transparent 50%),
-    radial-gradient(at 82% 12%, rgba(58, 90, 64, 0.65) 0px, transparent 45%),
-    radial-gradient(at 75% 78%, rgba(32, 52, 36, 0.85) 0px, transparent 55%),
-    radial-gradient(at 30% 85%, rgba(184, 155, 94, 0.20) 0px, transparent 45%);
+    radial-gradient(at 82% 12%, rgba(55, 85, 70, 0.65) 0px, transparent 45%),
+    radial-gradient(at 75% 78%, rgba(30, 46, 38, 0.85) 0px, transparent 55%),
+    radial-gradient(at 30% 85%, rgba(156, 153, 60, 0.20) 0px, transparent 45%);
 }
 
 /* Slate/guld-mesh – memorial (gravstenssidan) */
@@ -256,8 +257,8 @@ img {
   background-color: #F3F1E9;
   background-image:
     radial-gradient(at 12% 18%, rgba(143, 174, 139, 0.18) 0px, transparent 45%),
-    radial-gradient(at 88% 28%, rgba(58, 90, 64, 0.10) 0px, transparent 40%),
-    radial-gradient(at 60% 95%, rgba(184, 155, 94, 0.12) 0px, transparent 45%);
+    radial-gradient(at 88% 28%, rgba(55, 85, 70, 0.10) 0px, transparent 40%),
+    radial-gradient(at 60% 95%, rgba(156, 153, 60, 0.12) 0px, transparent 45%);
 }
 
 /* Mjuka, driftande blobbar som läggs i bakgrunden */
