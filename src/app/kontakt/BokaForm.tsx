@@ -1,18 +1,33 @@
 'use client'
 
 import { useState } from 'react'
-import { Send, CheckCircle } from 'lucide-react'
+import { Send, CheckCircle, Loader2 } from 'lucide-react'
 
 /**
- * Enkelt "Boka ett möte"-formulär.
- *
- * I demot skickas inget – vi visar bara en bekräftelse i UI:t. Koppla mot
- * /api/contact (Resend) i backend-fasen. Fälten är medvetet enkla.
+ * "Boka ett möte"-formulär. Skickar via /api/contact (Resend) till
+ * info@wildkullpayroll.se.
  */
 export function BokaForm() {
-  const [sent, setSent] = useState(false)
+  const [status, setStatus] = useState<'idle' | 'sending' | 'sent' | 'error'>('idle')
 
-  if (sent) {
+  async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
+    e.preventDefault()
+    setStatus('sending')
+
+    const data = Object.fromEntries(new FormData(e.currentTarget))
+    try {
+      const res = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data),
+      })
+      setStatus(res.ok ? 'sent' : 'error')
+    } catch {
+      setStatus('error')
+    }
+  }
+
+  if (status === 'sent') {
     return (
       <div className="flex flex-col items-center text-center py-10">
         <div className="h-14 w-14 rounded-full bg-brand-green/10 flex items-center justify-center mb-4">
@@ -20,27 +35,20 @@ export function BokaForm() {
         </div>
         <h3 className="text-xl font-bold text-[#23332A] mb-2">Tack för din förfrågan!</h3>
         <p className="text-gray-600 max-w-sm">
-          (Demo – inget skickades.) I den färdiga versionen landar meddelandet
-          direkt i Veronikas inkorg och du får en bekräftelse.
+          Ditt meddelande har skickats till Veronika, som återkommer till dig inom kort.
         </p>
       </div>
     )
   }
 
   return (
-    <form
-      onSubmit={(e) => {
-        e.preventDefault()
-        setSent(true)
-      }}
-      className="space-y-5"
-    >
+    <form onSubmit={handleSubmit} className="space-y-5">
       <div className="grid sm:grid-cols-2 gap-5">
         <Field label="Namn" name="namn" placeholder="För- och efternamn" required />
         <Field label="Företag" name="foretag" placeholder="Företagsnamn" />
       </div>
       <div className="grid sm:grid-cols-2 gap-5">
-        <Field label="E-post" name="epost" type="email" placeholder="namn@foretag.se" required />
+        <Field label="E-post" name="email" type="email" placeholder="namn@foretag.se" required />
         <Field label="Telefon" name="telefon" type="tel" placeholder="070-123 45 67" />
       </div>
 
@@ -72,12 +80,20 @@ export function BokaForm() {
         />
       </div>
 
+      {status === 'error' && (
+        <p className="text-sm text-red-600">
+          Något gick fel när meddelandet skulle skickas. Försök igen, eller mejla
+          oss direkt på info@wildkullpayroll.se.
+        </p>
+      )}
+
       <button
         type="submit"
-        className="inline-flex items-center justify-center gap-2 w-full sm:w-auto bg-brand-green text-white font-semibold px-8 py-3.5 rounded-lg hover:bg-brand-green-dark transition-colors shadow-md"
+        disabled={status === 'sending'}
+        className="inline-flex items-center justify-center gap-2 w-full sm:w-auto bg-brand-green text-white font-semibold px-8 py-3.5 rounded-lg hover:bg-brand-green-dark transition-colors shadow-md disabled:opacity-60 disabled:cursor-not-allowed"
       >
-        <Send size={18} />
-        Skicka förfrågan
+        {status === 'sending' ? <Loader2 size={18} className="animate-spin" /> : <Send size={18} />}
+        {status === 'sending' ? 'Skickar…' : 'Skicka förfrågan'}
       </button>
     </form>
   )

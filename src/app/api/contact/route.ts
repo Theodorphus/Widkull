@@ -1,9 +1,19 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { Resend } from 'resend'
 import { contactSchema } from '@/lib/validations/contact'
+import { BUSINESS } from '@/lib/data/business'
 
 function getResend() {
   return new Resend(process.env.RESEND_API_KEY)
+}
+
+/** Fälten kommer från ett publikt formulär – escapa innan de läggs i HTML-mejlet. */
+function esc(value: string) {
+  return value
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
 }
 
 export async function POST(request: NextRequest) {
@@ -18,21 +28,23 @@ export async function POST(request: NextRequest) {
       )
     }
 
-    const { namn, telefon, email, kommentar } = result.data
+    const { namn, email, telefon, foretag, amne, meddelande } = result.data
 
-    const recipient = process.env.RESEND_TO_OVERRIDE ?? 'info@fixarlukas.se'
+    const recipient = process.env.RESEND_TO_OVERRIDE ?? BUSINESS.email
 
     const { error: sendError } = await getResend().emails.send({
       from: process.env.RESEND_FROM ?? 'onboarding@resend.dev',
       to: recipient,
       replyTo: email,
-      subject: `Nytt meddelande från ${namn}`,
+      subject: amne ? `${amne} – ${namn}` : `Nytt meddelande från ${namn}`,
       html: [
-        `<h2>Nytt kontaktmeddelande</h2>`,
-        `<p><strong>Namn:</strong> ${namn}</p>`,
-        `<p><strong>Telefon:</strong> ${telefon}</p>`,
-        `<p><strong>E-post:</strong> ${email}</p>`,
-        kommentar ? `<p><strong>Meddelande:</strong> ${kommentar}</p>` : '',
+        `<h2>Nytt meddelande via wildkullpayroll.se</h2>`,
+        `<p><strong>Namn:</strong> ${esc(namn)}</p>`,
+        foretag ? `<p><strong>Företag:</strong> ${esc(foretag)}</p>` : '',
+        `<p><strong>E-post:</strong> ${esc(email)}</p>`,
+        telefon ? `<p><strong>Telefon:</strong> ${esc(telefon)}</p>` : '',
+        amne ? `<p><strong>Ämne:</strong> ${esc(amne)}</p>` : '',
+        meddelande ? `<p><strong>Meddelande:</strong> ${esc(meddelande)}</p>` : '',
       ]
         .filter(Boolean)
         .join('\n'),

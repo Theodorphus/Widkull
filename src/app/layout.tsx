@@ -6,7 +6,7 @@ import { Footer } from '@/components/layout/Footer'
 import { StructuredData } from '@/components/seo/StructuredData'
 import { SmoothScroll } from '@/components/premium/SmoothScroll'
 import { ScrollProgress } from '@/components/premium/ScrollProgress'
-import { OwlChatWidget } from '@/components/owl/OwlChatWidget'
+import { LoneugglanChat } from '@/components/owl/LoneugglanChat'
 import { Analytics } from '@vercel/analytics/next'
 
 const inter = Inter({
@@ -128,8 +128,8 @@ export default function RootLayout({
         <Header />
         <main className="flex-1">{children}</main>
         <Footer />
-        {/* Flytande chattknapp för Löneugglan (statisk i demot) */}
-        <OwlChatWidget />
+        {/* Löneugglan – Microsoft Copilot Studio-chatten (bot + livechatt) */}
+        <LoneugglanChat />
         <Analytics />
       </body>
     </html>

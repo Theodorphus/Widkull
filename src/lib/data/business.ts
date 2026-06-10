@@ -25,8 +25,10 @@ export const BUSINESS = {
     name: 'Löneugglan',
     intro: 'Lönehjälp när du har tid.',
     firstFree: 'Första frågan är gratis.',
-    /** Öppettider för chatten. */
-    hoursText: 'Tis, Tors & Sön 19–20',
+    /** Öppettider för livechatten – "vanligtvis" eftersom Veronika kan få förhinder. */
+    hoursText: 'Vanligtvis tis, tors & sön 19–20',
+    hoursNote:
+      'Övriga tider svarar Löneugglan på vanliga frågor – eller lämna din fråga i formuläret så återkommer Veronika vid nästa chattillfälle.',
     eveningText: 'Kvällsöppet',
     topics: ['lön', 'förmåner', 'semester', 'sjukfrånvaro och ledigheter', 'anställningar'],
   },

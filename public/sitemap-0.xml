@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
-<url><loc>https://fixarlukas.se</loc><lastmod>2026-06-05T23:20:05.759Z</lastmod><changefreq>weekly</changefreq><priority>1</priority></url>
-<url><loc>https://fixarlukas.se/fonsterputs</loc><lastmod>2026-06-05T23:20:05.760Z</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
-<url><loc>https://fixarlukas.se/gravstensrengoring</loc><lastmod>2026-06-05T23:20:05.760Z</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
-<url><loc>https://fixarlukas.se/icon.png</loc><lastmod>2026-06-05T23:20:05.760Z</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-<url><loc>https://fixarlukas.se/kontakt</loc><lastmod>2026-06-05T23:20:05.760Z</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-<url><loc>https://fixarlukas.se/om-mig</loc><lastmod>2026-06-05T23:20:05.760Z</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-<url><loc>https://fixarlukas.se/robots.txt</loc><lastmod>2026-06-05T23:20:05.760Z</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-<url><loc>https://fixarlukas.se/sitemap.xml</loc><lastmod>2026-06-05T23:20:05.760Z</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-<url><loc>https://fixarlukas.se/tjanster</loc><lastmod>2026-06-05T23:20:05.760Z</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
-<url><loc>https://fixarlukas.se/tradgardsarbete</loc><lastmod>2026-06-05T23:20:05.760Z</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+<url><loc>https://wildkullpayroll.se</loc><lastmod>2026-06-10T12:07:05.425Z</lastmod><changefreq>weekly</changefreq><priority>1</priority></url>
+<url><loc>https://wildkullpayroll.se/effektivisering</loc><lastmod>2026-06-10T12:07:05.426Z</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+<url><loc>https://wildkullpayroll.se/icon.png</loc><lastmod>2026-06-10T12:07:05.426Z</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+<url><loc>https://wildkullpayroll.se/integritetspolicy</loc><lastmod>2026-06-10T12:07:05.426Z</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+<url><loc>https://wildkullpayroll.se/interimskonsult</loc><lastmod>2026-06-10T12:07:05.426Z</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+<url><loc>https://wildkullpayroll.se/kontakt</loc><lastmod>2026-06-10T12:07:05.426Z</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+<url><loc>https://wildkullpayroll.se/kunskapsbank</loc><lastmod>2026-06-10T12:07:05.426Z</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+<url><loc>https://wildkullpayroll.se/lonehantering</loc><lastmod>2026-06-10T12:07:05.426Z</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+<url><loc>https://wildkullpayroll.se/om-oss</loc><lastmod>2026-06-10T12:07:05.426Z</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+<url><loc>https://wildkullpayroll.se/robots.txt</loc><lastmod>2026-06-10T12:07:05.426Z</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+<url><loc>https://wildkullpayroll.se/samarbete-redovisningsbyraer</loc><lastmod>2026-06-10T12:07:05.426Z</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+<url><loc>https://wildkullpayroll.se/sitemap.xml</loc><lastmod>2026-06-10T12:07:05.426Z</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+<url><loc>https://wildkullpayroll.se/tjanster</loc><lastmod>2026-06-10T12:07:05.426Z</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
 </urlset>

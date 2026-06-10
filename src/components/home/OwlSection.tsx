@@ -8,9 +8,9 @@ import { BUSINESS } from '@/lib/data/business'
  * "FRÅGA LÖNEUGGLAN" — startsidans signatursektion.
  *
  * Maskoten (uggla) till vänster, innehåll till höger: gratis första fråga,
- * öppettider och ämnen man kan fråga om. Knappen är i nuläget statisk och
- * pekar mot den flytande chattbubblan (OwlChatWidget). Den riktiga
- * AI-chatten kopplas in senare.
+ * öppettider och ämnen man kan fråga om. Själva chatten är Microsofts
+ * Copilot Studio-widget (LoneugglanChat) som ritar sin egen chattbubbla
+ * nere till höger – knappen här pekar besökaren dit.
  */
 export function OwlSection() {
   const { owl } = BUSINESS

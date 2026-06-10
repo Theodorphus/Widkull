@@ -2,6 +2,7 @@ import { Metadata } from 'next'
 import { Mail, MapPin, Clock, BadgeCheck } from 'lucide-react'
 import { Breadcrumbs } from '@/components/ui/Breadcrumbs'
 import { BokaForm } from './BokaForm'
+import { OwlQuestionForm } from '@/components/owl/OwlQuestionForm'
 import { MeshBackground } from '@/components/premium/MeshBackground'
 import { Parallax } from '@/components/premium/Scroll'
 import { MaskText, MemReveal } from '@/components/memorial/MemReveal'
@@ -68,6 +69,7 @@ export default function KontaktPage() {
             <InfoCard icon={<Clock size={20} />} title="Löneugglan – chatten">
               <p className="text-gray-600">{BUSINESS.owl.eveningText}</p>
               <p className="text-gray-600">{BUSINESS.owl.hoursText}</p>
+              <p className="text-gray-500 text-sm mt-1.5">{BUSINESS.owl.hoursNote}</p>
             </InfoCard>
 
             <InfoCard icon={<MapPin size={20} />} title="Arbetar med">
@@ -90,6 +92,22 @@ export default function KontaktPage() {
               </p>
             </div>
             <BokaForm />
+          </div>
+        </div>
+
+        {/* Fråga till Löneugglan när livechatten är stängd */}
+        <div className="max-w-6xl mx-auto mt-10">
+          <div className="bg-white rounded-2xl border border-[#E6E2D5] p-6 sm:p-8 shadow-[0_4px_24px_rgba(44,71,51,0.06)]">
+            <div className="mb-6">
+              <h2 className="text-2xl font-bold text-[#23332A] mb-1">
+                Ställ din fråga till Löneugglan 🦉
+              </h2>
+              <p className="text-gray-500 text-sm">
+                Veronika svarar i livechatten – {BUSINESS.owl.hoursText.toLowerCase()}.{' '}
+                {BUSINESS.owl.hoursNote}
+              </p>
+            </div>
+            <OwlQuestionForm />
           </div>
         </div>
       </div>

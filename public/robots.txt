@@ -7,7 +7,7 @@ User-agent: *
 Disallow: /api/
 
 # Host
-Host: https://fixarlukas.se
+Host: https://wildkullpayroll.se
 
 # Sitemaps
-Sitemap: https://fixarlukas.se/sitemap.xml
+Sitemap: https://wildkullpayroll.se/sitemap.xml
