@@ -45,6 +45,15 @@ export function OwlQuestionForm() {
 
   return (
     <form onSubmit={handleSubmit} className="space-y-4">
+      {/* Honeypot – osynligt för människor, fylls bara i av spambottar */}
+      <input
+        type="text"
+        name="website"
+        tabIndex={-1}
+        autoComplete="off"
+        aria-hidden="true"
+        className="hidden"
+      />
       <div className="grid sm:grid-cols-2 gap-4">
         <div>
           <label htmlFor="owl-namn" className="block text-sm font-semibold text-[#23332A] mb-1.5">

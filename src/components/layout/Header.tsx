@@ -73,7 +73,7 @@ export function Header() {
             </button>
 
             {/* Dropdown Menu */}
-            <div className="absolute left-0 mt-0 w-56 bg-white rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+            <div className="absolute left-0 mt-0 w-56 bg-white rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible group-focus-within:opacity-100 group-focus-within:visible transition-all duration-200">
               <div className="py-2">
                 {SERVICES_NAV.map((item) => (
                   <Link
@@ -91,16 +91,15 @@ export function Header() {
 
         {/* CTA Button - Desktop */}
         <div className="hidden md:block">
-          <Link href="/kontakt">
-            <Button>Boka ett möte</Button>
-          </Link>
+          <Button href="/kontakt">Boka ett möte</Button>
         </div>
 
         {/* Mobile Menu Button */}
         <button
           className="md:hidden p-2 hover:bg-gray-100 rounded-lg transition-colors"
           onClick={() => setIsOpen(!isOpen)}
-          aria-label="Toggle menu"
+          aria-label={isOpen ? 'Stäng menyn' : 'Öppna menyn'}
+          aria-expanded={isOpen}
         >
           {isOpen ? (
             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">

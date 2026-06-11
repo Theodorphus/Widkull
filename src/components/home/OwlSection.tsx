@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import { Check, Clock, Moon, MessageCircle } from 'lucide-react'
+import { StartChatButton } from '@/components/owl/StartChatButton'
 import { Reveal } from '@/components/premium/Scroll'
 import { MaskText } from '@/components/memorial/MemReveal'
 import { BUSINESS } from '@/lib/data/business'
@@ -8,15 +9,15 @@ import { BUSINESS } from '@/lib/data/business'
  * "FRÅGA LÖNEUGGLAN" — startsidans signatursektion.
  *
  * Maskoten (uggla) till vänster, innehåll till höger: gratis första fråga,
- * öppettider och ämnen man kan fråga om. Själva chatten är Microsofts
- * Copilot Studio-widget (LoneugglanChat) som ritar sin egen chattbubbla
- * nere till höger – knappen här pekar besökaren dit.
+ * öppettider och ämnen man kan fråga om. Själva chatten är Löneugglan
+ * (LoneugglanChat), vår egen Claude-drivna chattbubbla nere till höger –
+ * knappen här öppnar den.
  */
 export function OwlSection() {
   const { owl } = BUSINESS
 
   return (
-    <section id="loneugglan" className="relative -mt-10 sm:-mt-16 z-20 px-4 sm:px-6 lg:px-8 pb-6">
+    <section id="loneugglan" className="relative mt-2 sm:mt-4 z-20 px-4 sm:px-6 lg:px-8 pb-6">
       <div className="max-w-6xl mx-auto">
         <Reveal>
           <div className="relative overflow-hidden rounded-3xl bg-[#F7F4EC] border border-[#E4DECB] shadow-[0_30px_60px_-30px_rgba(44,71,51,0.45)]">
@@ -57,7 +58,7 @@ export function OwlSection() {
                   {owl.topics.map((topic) => (
                     <li key={topic} className="flex items-center gap-2 text-gray-700">
                       <span className="h-1.5 w-1.5 rounded-full bg-gold-accent flex-shrink-0" />
-                      <span className="capitalize">{topic}</span>
+                      <span className="inline-block first-letter:uppercase">{topic}</span>
                     </li>
                   ))}
                 </ul>
@@ -71,15 +72,9 @@ export function OwlSection() {
                 </div>
 
                 <div className="flex flex-wrap items-center gap-4">
-                  <a
-                    href="#"
-                    className="inline-flex items-center gap-2 bg-brand-green text-white font-semibold px-6 py-3 rounded-lg hover:bg-brand-green-dark transition-colors shadow-md"
-                  >
-                    <MessageCircle size={18} />
-                    Starta chatten
-                  </a>
+                  <StartChatButton />
                   <span className="font-serif italic text-gray-500">
-                    Klicka här för att chatta →
+                    …eller klicka på chattbubblan nere till höger
                   </span>
                 </div>
               </div>

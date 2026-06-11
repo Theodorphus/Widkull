@@ -67,12 +67,10 @@ export function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
           )}
         </div>
 
-        <div className="pt-4">
-          <Link href="/kontakt" className="w-full" onClick={onClose}>
-            <Button className="w-full">
-              Boka ett möte
-            </Button>
-          </Link>
+        <div className="pt-4" onClick={onClose}>
+          <Button href="/kontakt" className="w-full">
+            Boka ett möte
+          </Button>
         </div>
       </div>
     </div>

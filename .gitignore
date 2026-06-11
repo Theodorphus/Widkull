@@ -48,3 +48,6 @@ logs/
 # Misc
 .cache/
 .turbo/
+
+# Granskningsskript (scripts/audit.mjs) skriver hit
+audit-shots/

@@ -20,10 +20,10 @@ export interface ServiceMetadataParams {
  *
  * Usage:
  * export const metadata = generateServiceMetadata({
- *   title: 'Fönsterputs',
+ *   title: 'Lönehantering',
  *   description: '...',
- *   slug: 'fonsterputs',
- *   imageSrc: '/images/services/fonsterputs_hero.jpg'
+ *   slug: 'lonehantering',
+ *   imageSrc: '/images/og/wildkull-og.png'
  * })
  */
 export function generateServiceMetadata({

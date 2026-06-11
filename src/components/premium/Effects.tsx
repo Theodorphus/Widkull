@@ -81,10 +81,6 @@ export function CountUp({
   useEffect(() => {
     const el = ref.current
     if (!el) return
-    if (reducedMotion()) {
-      setValue(end)
-      return
-    }
 
     let raf = 0
     let start = 0
@@ -92,6 +88,11 @@ export function CountUp({
       ([entry]) => {
         if (!entry.isIntersecting) return
         observer.disconnect()
+        // Vid reducerad rörelse: hoppa direkt till slutvärdet utan animation.
+        if (reducedMotion()) {
+          setValue(end)
+          return
+        }
         const tick = (t: number) => {
           if (!start) start = t
           const p = Math.min((t - start) / duration, 1)

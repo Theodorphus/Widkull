@@ -20,6 +20,12 @@ export async function POST(request: NextRequest) {
   try {
     const body = await request.json()
 
+    // Honeypot: fältet "website" är osynligt för människor – ifyllt = bot.
+    // Svara "ok" så att boten inte försöker igen.
+    if (typeof body?.website === 'string' && body.website.length > 0) {
+      return NextResponse.json({ success: true, message: 'Din förfrågan har mottagits' }, { status: 200 })
+    }
+
     const result = contactSchema.safeParse(body)
     if (!result.success) {
       return NextResponse.json(

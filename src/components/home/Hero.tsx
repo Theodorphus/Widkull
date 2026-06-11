@@ -1,7 +1,6 @@
-import Link from 'next/link'
-import { Sparkles, ArrowRight, MessageCircle } from 'lucide-react'
+import { Sparkles, ArrowRight, MessageCircle, Check } from 'lucide-react'
 import { Button } from '@/components/ui/Button'
-import { MeshBackground } from '@/components/premium/MeshBackground'
+import { PhotoBackground } from '@/components/premium/PhotoBackground'
 import { Parallax } from '@/components/premium/Scroll'
 import { MaskText, MemReveal } from '@/components/memorial/MemReveal'
 
@@ -10,15 +9,27 @@ import { MaskText, MemReveal } from '@/components/memorial/MemReveal'
  *
  * Lugn, förtroendeingivande hero i mörk skogsgrön med varm gräddtext.
  * Vänsterställd rubrik enligt Wildkulls önskade design.
- * (Byt mesh-bakgrunden mot ett riktigt kontorsfoto när det finns – se BILDER.md.)
+ * Kontorsfoto i bakgrunden med mörk overlay; forest-mesh ligger kvar som
+ * fallback under fotot (visas om bilden saknas).
  */
 export function Hero() {
   return (
     <section className="relative min-h-[88vh] flex items-center overflow-hidden">
-      {/* Bakgrund: mörk grön mesh med långsam parallax */}
+      {/* Bakgrund: kontorsfoto med långsam parallax (mesh som fallback under) */}
       <Parallax speed={-40} className="absolute inset-0 scale-110">
-        <MeshBackground variant="forest" />
+        <PhotoBackground
+          src="/images/home/hero.png"
+          variant="forest"
+          overlay="medium"
+          objectPosition="center 20%"
+          priority
+          alt=""
+        />
       </Parallax>
+
+      {/* Extra mörkning från vänster – bildens vänsterhalva är ljus, så detta
+          säkrar läsbarheten för den vänsterställda rubriken. */}
+      <div className="absolute inset-0 z-[1] bg-gradient-to-r from-forest-deep/80 via-forest-deep/30 to-transparent" />
 
       {/* Mjuk gräddövergång nedtill mot nästa sektion */}
       <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-[#F3F1E9] to-transparent z-[5]" />
@@ -46,18 +57,31 @@ export function Hero() {
           </MemReveal>
 
           <MemReveal delay={420} className="mem-fade flex flex-col sm:flex-row gap-3">
-            <Link href="/tjanster" className="w-full sm:w-auto">
-              <Button size="lg" className="shadow-xl w-full sm:w-auto group">
-                Våra tjänster
-                <ArrowRight size={18} className="ml-2 group-hover:translate-x-1 transition-transform" />
-              </Button>
-            </Link>
-            <a href="#loneugglan" className="w-full sm:w-auto">
-              <button className="w-full inline-flex items-center justify-center gap-2 px-8 py-3 rounded-lg text-base sm:text-lg font-semibold border-2 border-cream/60 text-cream hover:bg-cream/10 transition-colors">
-                <MessageCircle size={18} />
-                Fråga Löneugglan
-              </button>
+            <Button href="/tjanster" size="lg" className="shadow-xl w-full sm:w-auto group">
+              Våra tjänster
+              <ArrowRight size={18} className="ml-2 group-hover:translate-x-1 transition-transform" />
+            </Button>
+            <a
+              href="#loneugglan"
+              className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-3 rounded-lg text-base sm:text-lg font-semibold border-2 border-cream/60 text-cream hover:bg-cream/10 transition-colors"
+            >
+              <MessageCircle size={18} />
+              Fråga Löneugglan
             </a>
+          </MemReveal>
+
+          {/* Förtroenderad – svarar direkt på "kan jag lita på henne?" */}
+          <MemReveal delay={540} className="mem-fade mt-8 flex flex-wrap items-center gap-x-5 gap-y-2 text-sm text-cream/80">
+            {[
+              'I lönebranschen sedan 2011',
+              'Kunder i hela Sverige',
+              'Godkänd för F-skatt',
+            ].map((text) => (
+              <span key={text} className="inline-flex items-center gap-2">
+                <Check size={15} className="text-gold-accent flex-shrink-0" />
+                {text}
+              </span>
+            ))}
           </MemReveal>
         </div>
       </div>

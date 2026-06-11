@@ -8,13 +8,10 @@ import { useEffect, useState } from 'react'
  */
 export function ScrollProgress() {
   const [progress, setProgress] = useState(0)
-  const [enabled, setEnabled] = useState(true)
 
   useEffect(() => {
-    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-      setEnabled(false)
-      return
-    }
+    // Vid reducerad rörelse lämnas progress på 0 – baren förblir osynlig.
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return
 
     let frame = 0
     const update = () => {
@@ -37,8 +34,6 @@ export function ScrollProgress() {
       if (frame) cancelAnimationFrame(frame)
     }
   }, [])
-
-  if (!enabled) return null
 
   return (
     <div

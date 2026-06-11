@@ -123,12 +123,18 @@ export default function RootLayout({
         <StructuredData />
       </head>
       <body className="min-h-full flex flex-col bg-white">
+        <a
+          href="#innehall"
+          className="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:z-[100] focus:bg-white focus:text-brand-green focus:font-semibold focus:px-4 focus:py-2 focus:rounded-lg focus:shadow-lg"
+        >
+          Hoppa till innehållet
+        </a>
         <SmoothScroll />
         <ScrollProgress />
         <Header />
-        <main className="flex-1">{children}</main>
+        <main id="innehall" className="flex-1">{children}</main>
         <Footer />
-        {/* Löneugglan – Microsoft Copilot Studio-chatten (bot + livechatt) */}
+        {/* Löneugglan – egen chattbubbla driven av Claude (/api/chat) */}
         <LoneugglanChat />
         <Analytics />
       </body>

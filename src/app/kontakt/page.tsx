@@ -96,7 +96,7 @@ export default function KontaktPage() {
         </div>
 
         {/* Fråga till Löneugglan när livechatten är stängd */}
-        <div className="max-w-6xl mx-auto mt-10">
+        <div id="loneugglan-fraga" className="max-w-6xl mx-auto mt-10 scroll-mt-24">
           <div className="bg-white rounded-2xl border border-[#E6E2D5] p-6 sm:p-8 shadow-[0_4px_24px_rgba(44,71,51,0.06)]">
             <div className="mb-6">
               <h2 className="text-2xl font-bold text-[#23332A] mb-1">

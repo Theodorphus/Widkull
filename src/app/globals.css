@@ -47,6 +47,11 @@
   --font-sans: var(--font-inter);
   --font-display: var(--font-display);
   --font-serif: var(--font-serif);
+
+  /* Skuggor (användes tidigare via tailwind.config.ts som Tailwind v4 inte läser) */
+  --shadow-subtle: 0 2px 8px rgba(0, 0, 0, 0.05);
+  --shadow-medium: 0 4px 16px rgba(0, 0, 0, 0.1);
+  --shadow-strong: 0 8px 24px rgba(0, 0, 0, 0.15);
 }
 
 body {

@@ -23,7 +23,7 @@ export const SERVICES: ServiceData[] = [
       'Rapportering till Fora, Collectum och kollektivavtal',
     ],
     badges: ['Outsourcing', 'På distans', 'Fast kontaktperson'],
-    imageSrc: '/images/og/lonehantering.png',
+    imageSrc: '/images/og/wildkull-og.png',
     keyPoints: [
       {
         title: 'Rätt lön i tid',
@@ -84,7 +84,7 @@ export const SERVICES: ServiceData[] = [
       'Flexibelt upplägg – på plats eller på distans',
     ],
     badges: ['Snabb start', 'Flexibelt', 'Erfaren'],
-    imageSrc: '/images/og/interimskonsult.png',
+    imageSrc: '/images/og/wildkull-og.png',
     keyPoints: [
       {
         title: 'Igång snabbt',
@@ -140,7 +140,7 @@ export const SERVICES: ServiceData[] = [
       'Utbildning av personal i nya arbetssätt',
     ],
     badges: ['Processöversyn', 'Systemstöd', 'Utbildning'],
-    imageSrc: '/images/og/effektivisering.png',
+    imageSrc: '/images/og/wildkull-og.png',
     keyPoints: [
       {
         title: 'Spara tid',
@@ -199,7 +199,7 @@ export const SERVICES: ServiceData[] = [
       'Möjlighet att hänvisa komplexa löneärenden till oss',
     ],
     badges: ['White label', 'Skalbart', 'Lönepartner'],
-    imageSrc: '/images/og/samarbete-redovisningsbyraer.png',
+    imageSrc: '/images/og/wildkull-og.png',
     keyPoints: [
       {
         title: 'Komplett erbjudande',

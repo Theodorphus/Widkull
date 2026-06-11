@@ -29,12 +29,10 @@ export function CTABanner() {
         </Reveal>
 
         <Reveal delay={220} className="flex flex-col sm:flex-row gap-3 justify-center">
-          <Link href="/kontakt" className="w-full sm:w-auto">
-            <Button size="lg" className="font-bold w-full sm:w-auto sm:px-10">
-              <CalendarCheck size={18} className="mr-2" />
-              Boka ett möte
-            </Button>
-          </Link>
+          <Button href="/kontakt" size="lg" className="font-bold w-full sm:w-auto sm:px-10">
+            <CalendarCheck size={18} className="mr-2" />
+            Boka ett möte
+          </Button>
           <Link
             href="/tjanster"
             className="inline-flex items-center justify-center font-semibold rounded-lg transition-colors px-6 py-3 text-base sm:text-lg text-cream border-2 border-cream/50 hover:bg-cream/10"

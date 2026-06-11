@@ -10,8 +10,8 @@ export const BUSINESS = {
   motto: 'Lönehantering som skapar trygghet och frigör tid',
   owner: 'Veronika Wildkull',
   ownerRole: 'Senior lönekonsult',
-  phone: '070-123 45 67',
-  phoneHref: '+46701234567',
+  // OBS: Telefonnummer saknas medvetet – lägg till Veronikas riktiga nummer
+  // här (phone + phoneHref) när hon vill visa det på sajten.
   email: 'info@wildkullpayroll.se',
   siteUrl: 'https://wildkullpayroll.se',
   /** Bolagsuppgifter. */

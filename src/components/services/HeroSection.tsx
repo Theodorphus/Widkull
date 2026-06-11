@@ -79,11 +79,9 @@ export function HeroSection({ title, tagline, photoSrc }: HeroSectionProps) {
 
         {/* CTA Buttons */}
         <MemReveal delay={450} className="mem-fade flex flex-col sm:flex-row gap-4 justify-center">
-          <Link href="/kontakt">
-            <Button size="lg" variant="secondary" className="shadow-xl">
-              Boka ett möte
-            </Button>
-          </Link>
+          <Button href="/kontakt" size="lg" variant="secondary" className="shadow-xl">
+            Boka ett möte
+          </Button>
           <a
             href={`mailto:${BUSINESS.email}`}
             className="inline-flex items-center justify-center font-semibold rounded-lg transition-all duration-300 whitespace-nowrap text-white border-2 border-white/70 hover:bg-white hover:text-brand-green hover:-translate-y-0.5 hover:shadow-xl px-8 py-3 text-lg shadow-md"

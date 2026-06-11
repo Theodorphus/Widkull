@@ -1,4 +1,3 @@
-import Link from 'next/link'
 import { CheckCircle, Mail, CalendarCheck } from 'lucide-react'
 import { HeroSection } from './HeroSection'
 import { WhatIncludedSection } from './WhatIncludedSection'
@@ -101,12 +100,10 @@ export function ServicePageTemplate({
             Vill du veta mer? Boka ett kostnadsfritt möte så pratar vi om era behov.
           </p>
           <div className="flex flex-col sm:flex-row gap-3 flex-shrink-0">
-            <Link href="/kontakt">
-              <Button size="lg" className="w-full sm:w-auto font-bold">
-                <CalendarCheck size={18} className="mr-2" />
-                Boka ett möte
-              </Button>
-            </Link>
+            <Button href="/kontakt" size="lg" className="w-full sm:w-auto font-bold">
+              <CalendarCheck size={18} className="mr-2" />
+              Boka ett möte
+            </Button>
             <a
               href={`mailto:${BUSINESS.email}`}
               className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-lg border-2 border-white text-white font-semibold hover:bg-white/10 hover:-translate-y-0.5 transition-all duration-300 text-base"

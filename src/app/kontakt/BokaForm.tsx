@@ -43,6 +43,15 @@ export function BokaForm() {
 
   return (
     <form onSubmit={handleSubmit} className="space-y-5">
+      {/* Honeypot – osynligt för människor, fylls bara i av spambottar */}
+      <input
+        type="text"
+        name="website"
+        tabIndex={-1}
+        autoComplete="off"
+        aria-hidden="true"
+        className="hidden"
+      />
       <div className="grid sm:grid-cols-2 gap-5">
         <Field label="Namn" name="namn" placeholder="För- och efternamn" required />
         <Field label="Företag" name="foretag" placeholder="Företagsnamn" />

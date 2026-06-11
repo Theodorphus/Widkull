@@ -1,4 +1,5 @@
 import { ReactNode, forwardRef } from 'react'
+import Link from 'next/link'
 import { cn } from '@/lib/utils/cn'
 
 type ButtonVariant = 'primary' | 'secondary' | 'outline' | 'ghost'
@@ -9,6 +10,8 @@ interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   size?: ButtonSize
   children: ReactNode
   fullWidth?: boolean
+  /** Renderar en <Link> med knapp-utseende (giltig HTML – ingen knapp i länk). */
+  href?: string
 }
 
 /**
@@ -28,6 +31,7 @@ const Button = forwardRef<HTMLButtonElement, ButtonProps>(
       className,
       children,
       fullWidth = false,
+      href,
       ...props
     },
     ref
@@ -67,6 +71,14 @@ const Button = forwardRef<HTMLButtonElement, ButtonProps>(
       props.disabled && 'opacity-50 cursor-not-allowed hover:shadow-none hover:translate-y-0',
       className
     )
+
+    if (href) {
+      return (
+        <Link href={href} className={combinedClassName}>
+          {children}
+        </Link>
+      )
+    }
 
     return (
       <button ref={ref} className={combinedClassName} {...props}>

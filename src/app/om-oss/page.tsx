@@ -1,6 +1,5 @@
 import { Metadata } from 'next'
 import Image from 'next/image'
-import Link from 'next/link'
 import { ShieldCheck, Heart, GraduationCap, Sparkles } from 'lucide-react'
 import { SectionWrapper } from '@/components/ui/SectionWrapper'
 import { Breadcrumbs } from '@/components/ui/Breadcrumbs'
@@ -157,11 +156,9 @@ export default function OmOss() {
         </Reveal>
 
         <div className="text-center">
-          <Link href="/kontakt">
-            <Button size="lg" className="font-bold">
-              Boka ett möte
-            </Button>
-          </Link>
+          <Button href="/kontakt" size="lg" className="font-bold">
+            Boka ett möte
+          </Button>
         </div>
       </SectionWrapper>
     </>
