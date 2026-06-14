@@ -21,7 +21,7 @@ export function ServicesGrid() {
             <MaskText>Lösningar som passar ditt företag</MaskText>
           </h2>
           <p className="text-base sm:text-lg text-gray-600 max-w-2xl mx-auto">
-            Vi erbjuder flexibla lösningar inom lön, rådgivning och effektivisering –
+            Vi erbjuder flexibla lösningar inom lön, rådgivning och effektivisering,
             oavsett om du är företag, organisation eller redovisningsbyrå.
           </p>
         </div>

@@ -13,13 +13,13 @@ export default function NotFound() {
       <div className="flex flex-wrap justify-center gap-3 mb-12">
         <Link
           href="/"
-          className="px-5 py-2.5 bg-navy text-white rounded-lg font-semibold hover:bg-petrol transition-colors"
+          className="px-5 py-2.5 bg-brand-green text-white rounded-lg font-semibold hover:bg-brand-green-dark transition-colors"
         >
           Startsida
         </Link>
         <Link
           href="/tjanster"
-          className="px-5 py-2.5 bg-white text-navy border border-navy rounded-lg font-semibold hover:bg-gray-50 transition-colors"
+          className="px-5 py-2.5 bg-white text-brand-green border border-brand-green rounded-lg font-semibold hover:bg-gray-50 transition-colors"
         >
           Våra tjänster
         </Link>
@@ -38,7 +38,7 @@ export default function NotFound() {
             <Link
               key={service.slug}
               href={`/${service.slug}`}
-              className="text-sm text-navy hover:text-brand-green underline underline-offset-2 transition-colors"
+              className="text-sm text-brand-green hover:text-brand-green-dark underline underline-offset-2 transition-colors"
             >
               {service.title}
             </Link>

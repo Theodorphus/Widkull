@@ -34,16 +34,16 @@ export function Hero() {
       {/* Mjuk gräddövergång nedtill mot nästa sektion */}
       <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-[#F3F1E9] to-transparent z-[5]" />
 
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 w-full">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-28 sm:py-32 w-full">
         <div className="max-w-2xl">
-          <MemReveal className="mem-fade mb-6 inline-flex items-center gap-2 bg-white/10 backdrop-blur-md px-4 py-2 rounded-full border border-white/20">
+          <MemReveal className="mem-fade mb-7 inline-flex items-center gap-2 bg-white/10 backdrop-blur-md px-4 py-2 rounded-full border border-white/20">
             <Sparkles size={15} className="text-gold-accent" />
             <span className="text-xs sm:text-sm font-semibold tracking-wide text-cream">
               Erfaren lönekonsult · För företag, organisationer & redovisningsbyråer
             </span>
           </MemReveal>
 
-          <h1 className="font-display text-cream text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-[1.08] drop-shadow-sm mb-6">
+          <h1 className="font-display text-cream text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-[1.12] sm:leading-[1.08] drop-shadow-sm mb-8">
             <MaskText>Lönehantering som</MaskText>
             <br />
             <MaskText delay={120}>skapar trygghet</MaskText>
@@ -52,7 +52,7 @@ export function Hero() {
           </h1>
 
           <MemReveal as="p" delay={300} className="mem-fade text-base sm:text-xl text-cream/85 leading-relaxed mb-9 font-light max-w-xl">
-            Outsourcing av lön, effektivisering och interimstöd – med en
+            Outsourcing av lön, effektivisering och interimstöd. Du får en
             personlig och erfaren lönekonsult vid din sida.
           </MemReveal>
 

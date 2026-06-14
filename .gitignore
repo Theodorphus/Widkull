@@ -51,3 +51,6 @@ logs/
 
 # Granskningsskript (scripts/audit.mjs) skriver hit
 audit-shots/
+
+# Interna arbetsfiler från kund (Word-dokument med ändringsönskemål m.m.)
+Kunden_Changes_response/

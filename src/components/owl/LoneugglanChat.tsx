@@ -19,7 +19,7 @@ type Msg = { role: 'user' | 'assistant'; content: string }
 const GREETING: Msg = {
   role: 'assistant',
   content:
-    'Hej, jag är Löneugglan! 🦉 Fråga mig gärna om lön, semester, förmåner eller hur Wildkull Payroll kan hjälpa er. Första frågan är gratis.',
+    'Hej, jag är Löneugglan! 🦉 Fråga mig gärna om lön, semester, förmåner eller hur Wildkull Payroll kan hjälpa er. Jag svarar dygnet runt.',
 }
 
 export function LoneugglanChat() {
@@ -123,7 +123,7 @@ export function LoneugglanChat() {
           {/* Huvud */}
           <div className="flex items-center gap-3 bg-brand-green text-white px-4 py-3">
             <div className="relative h-9 w-9 flex-shrink-0">
-              <Image src="/images/owl-crest.png" alt="" fill sizes="36px" className="object-contain" />
+              <Image src="/images/home/Uggla1.png" alt="" fill sizes="36px" className="object-contain" />
             </div>
             <div className="leading-tight">
               <p className="font-display font-bold text-sm">Löneugglan</p>
@@ -174,7 +174,7 @@ export function LoneugglanChat() {
               </button>
             </div>
             <p className="mt-2 text-[11px] text-gray-400 text-center">
-              Allmän vägledning – för ditt specifika fall,{' '}
+              Allmän vägledning. För ditt specifika fall,{' '}
               <Link href="/kontakt" className="underline hover:text-brand-green" onClick={() => setOpen(false)}>
                 kontakta {BUSINESS.owner.split(' ')[0]}
               </Link>

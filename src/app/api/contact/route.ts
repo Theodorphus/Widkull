@@ -34,7 +34,7 @@ export async function POST(request: NextRequest) {
       )
     }
 
-    const { namn, email, telefon, foretag, amne, meddelande } = result.data
+    const { namn, email, telefon, foretag, orgnr, amne, meddelande } = result.data
 
     const recipient = process.env.RESEND_TO_OVERRIDE ?? BUSINESS.email
 
@@ -42,11 +42,12 @@ export async function POST(request: NextRequest) {
       from: process.env.RESEND_FROM ?? 'onboarding@resend.dev',
       to: recipient,
       replyTo: email,
-      subject: amne ? `${amne} – ${namn}` : `Nytt meddelande från ${namn}`,
+      subject: amne ? `${amne}: ${namn}` : `Nytt meddelande från ${namn}`,
       html: [
         `<h2>Nytt meddelande via wildkullpayroll.se</h2>`,
         `<p><strong>Namn:</strong> ${esc(namn)}</p>`,
         foretag ? `<p><strong>Företag:</strong> ${esc(foretag)}</p>` : '',
+        orgnr ? `<p><strong>Org.nr:</strong> ${esc(orgnr)}</p>` : '',
         `<p><strong>E-post:</strong> ${esc(email)}</p>`,
         telefon ? `<p><strong>Telefon:</strong> ${esc(telefon)}</p>` : '',
         amne ? `<p><strong>Ämne:</strong> ${esc(amne)}</p>` : '',

@@ -47,7 +47,7 @@ export const metadata: Metadata = {
     template: '%s | Wildkull Payroll AB',
   },
   description:
-    'Lönehantering som skapar trygghet och frigör tid. Outsourcing, interimstöd, effektivisering och samarbete med redovisningsbyråer – med en erfaren lönekonsult vid din sida.',
+    'Lönehantering som skapar trygghet och frigör tid. Outsourcing, interimstöd, effektivisering och samarbete med redovisningsbyråer, med en erfaren lönekonsult vid din sida.',
 
   keywords: [
     'lönehantering',
@@ -77,7 +77,7 @@ export const metadata: Metadata = {
         url: '/images/og/wildkull-og.png',
         width: 1200,
         height: 630,
-        alt: 'Wildkull Payroll AB – Lönehantering som skapar trygghet och frigör tid',
+        alt: 'Wildkull Payroll AB. Lönehantering som skapar trygghet och frigör tid',
       },
     ],
   },

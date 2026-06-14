@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { ShieldCheck, Zap, UserRound, Award } from 'lucide-react'
 import { Hero } from '@/components/home/Hero'
+import { OfferBanner } from '@/components/home/OfferBanner'
 import { OwlSection } from '@/components/home/OwlSection'
 import { ServicesGrid } from '@/components/home/ServicesGrid'
 import { USPRow } from '@/components/sections/USPRow'
@@ -21,7 +22,10 @@ export default function Home() {
       {/* 1. Hero */}
       <Hero />
 
-      {/* 2. Fråga Löneugglan – signatursektion */}
+      {/* 2. Kampanj – Första månaden gratis (juli–september) */}
+      <OfferBanner />
+
+      {/* 3. Fråga Löneugglan – signatursektion */}
       <OwlSection />
 
       {/* 3. Tjänster – fyra kort */}
@@ -30,7 +34,7 @@ export default function Home() {
       {/* 4. Därför väljer företag Wildkull */}
       <USPRow
         title="Därför väljer företag Wildkull Payroll"
-        subtitle="Trygghet, erfarenhet och en personlig kontakt – från första mötet till varje lönekörning."
+        subtitle="Trygghet, erfarenhet och en personlig kontakt, från första mötet till varje lönekörning."
         items={[
           {
             icon: ShieldCheck,
@@ -42,13 +46,13 @@ export default function Home() {
             icon: Zap,
             title: 'Effektivt & modernt',
             description:
-              'Vi effektiviserar och skapar smidiga processer med rätt systemstöd – mindre manuellt arbete.',
+              'Vi effektiviserar och skapar smidiga processer med rätt systemstöd för mindre manuellt arbete.',
           },
           {
             icon: UserRound,
             title: 'Personligt & nära',
             description:
-              'Du får en personlig kontakt som förstår ditt företags behov – inte ett anonymt supportnummer.',
+              'Du får en personlig kontakt som förstår ditt företags behov, inte ett anonymt supportnummer.',
           },
           {
             icon: Award,

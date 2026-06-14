@@ -9,7 +9,7 @@ const SLUG = 'effektivisering'
 export const metadata: Metadata = generateServiceMetadata({
   title: 'Effektivisering',
   description:
-    'Vi hjälper er att modernisera och effektivisera löneprocessen – bättre rutiner, rätt systemstöd och färre fel.',
+    'Vi hjälper er att modernisera och effektivisera löneprocessen med bättre rutiner, rätt systemstöd och färre fel.',
   slug: SLUG,
   imageSrc: '/images/og/wildkull-og.png',
 })

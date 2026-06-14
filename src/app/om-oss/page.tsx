@@ -10,9 +10,9 @@ import { MaskText, MemReveal } from '@/components/memorial/MemReveal'
 import { BUSINESS } from '@/lib/data/business'
 
 export const metadata: Metadata = {
-  title: 'Om oss – Wildkull Payroll AB',
+  title: 'Om oss | Wildkull Payroll AB',
   description:
-    'Bakom Wildkull Payroll AB står Veronika Wildkull, senior lönekonsult. Lång erfarenhet av lön, HR och rådgivning – med en personlig och trygg kontakt.',
+    'Bakom Wildkull Payroll AB står Veronika Wildkull, senior lönekonsult. Lång erfarenhet av lön, HR och rådgivning, med en personlig och trygg kontakt.',
   alternates: {
     canonical: `${BUSINESS.siteUrl}/om-oss`,
   },
@@ -29,12 +29,12 @@ const VALUES = [
   {
     icon: Heart,
     title: 'Personlig service',
-    description: 'Skräddarsydda lösningar anpassade efter varje kunds unika behov – med en fast kontaktperson.',
+    description: 'Skräddarsydda lösningar anpassade efter varje kunds unika behov, med en fast kontaktperson.',
   },
   {
     icon: GraduationCap,
     title: 'Lång erfarenhet',
-    description: 'Över ett decennium i lönebranschen – från löneadministratör och teamleader till lönechef.',
+    description: 'Över ett decennium i lönebranschen, från löneadministratör och teamleader till lönechef.',
   },
   {
     icon: Sparkles,
@@ -58,7 +58,7 @@ export default function OmOss() {
             <MaskText>Hej, jag heter Veronika</MaskText>
           </h1>
           <MemReveal as="p" delay={150} className="mem-fade text-xl text-cream/90 font-light">
-            Senior lönekonsult och grundare – i lönebranschen sedan 2011.
+            Senior lönekonsult och grundare, i lönebranschen sedan 2011.
           </MemReveal>
         </div>
       </section>
@@ -71,10 +71,10 @@ export default function OmOss() {
             <div className="absolute -inset-3 rounded-3xl bg-brand-green/5 blur-2xl" />
             <div className="relative overflow-hidden rounded-3xl border border-[#E6E2D5] shadow-[0_30px_60px_-30px_rgba(44,71,51,0.45)]">
               <Image
-                src="/images/veronika.jpg"
+                src="/images/veronika-2026.png"
                 alt="Veronika Wildkull, senior lönekonsult och grundare av Wildkull Payroll AB"
-                width={1080}
-                height={1080}
+                width={1024}
+                height={1536}
                 className="w-full h-auto object-cover"
                 priority
               />
@@ -97,7 +97,7 @@ export default function OmOss() {
             <p className="text-lg text-gray-600 mb-4">
               Jag är utbildad löneekonom med examen från Frans Schartaus Handelsinstitut i
               Stockholm och har arbetat i lönebranschen sedan 2011. Under åren har jag haft
-              flera olika roller – löneadministratör, teamleader och lönechef – och deltagit i
+              flera olika roller (löneadministratör, teamleader och lönechef) och deltagit i
               flera implementationsprojekt.
             </p>
             <p className="text-lg text-gray-600 mb-4">
@@ -110,9 +110,10 @@ export default function OmOss() {
               Idag driver jag eget företag där jag erbjuder expertis inom outsourcing av
               lönehantering, processoptimering och utbildning. I mina uppdrag har jag
               effektiviserat löneprocesser, minskat onödiga arbetsmoment och gett stöd åt chefer
-              på löneavdelningar. Med en förmåga att identifiera och rätta felaktigheter – och en
-              genuin passion för att förbättra och utveckla – är jag en engagerad och pålitlig
-              partner för företag som vill ha en smidig och korrekt löneadministration.
+              på löneavdelningar. Jag brukar även kvalitetssäkra löneprocesser. Med en förmåga att
+              identifiera och rätta felaktigheter och en genuin passion för att förbättra och
+              utveckla är jag en engagerad och pålitlig partner för företag som vill ha en smidig
+              och korrekt löneadministration.
             </p>
             <p className="text-lg text-gray-700 font-medium border-l-4 border-gold-accent pl-4 italic">
               ”{BUSINESS.motto}.”
@@ -132,7 +133,7 @@ export default function OmOss() {
             <p className="text-cream/85 leading-relaxed">
               Noggrannhet, ständig förbättring och ett starkt engagemang. Med skräddarsydda
               lösningar anpassade efter just ditt företags behov erbjuder jag både
-              helhetslösningar och stöd inom specifika delar av lönehanteringen – med dina behov
+              helhetslösningar och stöd inom specifika delar av lönehanteringen, med dina behov
               i fokus och målet att skapa långsiktiga samarbeten.
             </p>
           </div>

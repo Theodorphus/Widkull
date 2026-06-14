@@ -1,4 +1,5 @@
 import { Metadata } from 'next'
+import Image from 'next/image'
 import { Mail, MapPin, Clock, BadgeCheck } from 'lucide-react'
 import { Breadcrumbs } from '@/components/ui/Breadcrumbs'
 import { BokaForm } from './BokaForm'
@@ -9,7 +10,7 @@ import { MaskText, MemReveal } from '@/components/memorial/MemReveal'
 import { BUSINESS } from '@/lib/data/business'
 
 export const metadata: Metadata = {
-  title: 'Kontakt – Boka ett möte | Wildkull Payroll AB',
+  title: 'Kontakt | Boka ett möte | Wildkull Payroll AB',
   description:
     'Boka ett kostnadsfritt möte med Wildkull Payroll AB. Berätta om era behov inom lön så återkommer vi snabbt.',
   alternates: {
@@ -21,7 +22,7 @@ function ContactPageStructuredData() {
   const schema = {
     '@context': 'https://schema.org',
     '@type': 'ContactPage',
-    name: 'Kontakt – Wildkull Payroll AB',
+    name: 'Kontakt | Wildkull Payroll AB',
     url: `${BUSINESS.siteUrl}/kontakt`,
     description: 'Boka ett kostnadsfritt möte med Wildkull Payroll AB.',
     mainEntity: { '@id': `${BUSINESS.siteUrl}/#business` },
@@ -66,14 +67,13 @@ export default function KontaktPage() {
               </a>
             </InfoCard>
 
-            <InfoCard icon={<Clock size={20} />} title="Löneugglan – chatten">
-              <p className="text-gray-600">{BUSINESS.owl.eveningText}</p>
-              <p className="text-gray-600">{BUSINESS.owl.hoursText}</p>
-              <p className="text-gray-500 text-sm mt-1.5">{BUSINESS.owl.hoursNote}</p>
+            <InfoCard icon={<Clock size={20} />} title="Löneugglan, chatten">
+              <p className="text-gray-600">{BUSINESS.owl.alwaysOn}</p>
+              <p className="text-gray-500 text-sm mt-1.5">{BUSINESS.owl.replyNote}</p>
             </InfoCard>
 
             <InfoCard icon={<MapPin size={20} />} title="Arbetar med">
-              <p className="text-gray-600">Kunder i hela Sverige – på distans.</p>
+              <p className="text-gray-600">Kunder i hela Sverige, på distans.</p>
             </InfoCard>
 
             <InfoCard icon={<BadgeCheck size={20} />} title="Bolagsuppgifter">
@@ -98,14 +98,26 @@ export default function KontaktPage() {
         {/* Fråga till Löneugglan när livechatten är stängd */}
         <div id="loneugglan-fraga" className="max-w-6xl mx-auto mt-10 scroll-mt-24">
           <div className="bg-white rounded-2xl border border-[#E6E2D5] p-6 sm:p-8 shadow-[0_4px_24px_rgba(44,71,51,0.06)]">
-            <div className="mb-6">
-              <h2 className="text-2xl font-bold text-[#23332A] mb-1">
-                Ställ din fråga till Löneugglan 🦉
-              </h2>
-              <p className="text-gray-500 text-sm">
-                Veronika svarar i livechatten – {BUSINESS.owl.hoursText.toLowerCase()}.{' '}
-                {BUSINESS.owl.hoursNote}
-              </p>
+            <div className="mb-6 flex items-start gap-4">
+              <div className="relative h-[68px] w-[78px] flex-shrink-0">
+                <Image
+                  src="/images/Uggla_Logga2.png"
+                  alt="Löneugglan"
+                  fill
+                  sizes="78px"
+                  className="object-contain"
+                />
+              </div>
+              <div>
+                <h2 className="text-2xl font-bold text-[#23332A] mb-1">
+                  Skicka en fråga till Veronika
+                </h2>
+                <p className="text-gray-500 text-sm">
+                  Löneugglan svarar direkt i chatten dygnet runt. Gäller frågan din
+                  egen situation lämnar du den här, så svarar Veronika personligen
+                  inom 24 timmar.
+                </p>
+              </div>
             </div>
             <OwlQuestionForm />
           </div>

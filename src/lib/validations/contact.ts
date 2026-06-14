@@ -5,6 +5,7 @@ export const contactSchema = z.object({
   email: z.string().email('Ange en giltig e-postadress'),
   telefon: z.string().optional(),
   foretag: z.string().optional(),
+  orgnr: z.string().optional(),
   amne: z.string().optional(),
   meddelande: z.string().optional(),
 })

@@ -28,7 +28,7 @@ interface USPRowProps {
 
 export function USPRow({
   title = 'Varför välja Fixar Lukas?',
-  subtitle = 'Lokal, noggrann och personlig – jag fixar måstena runt hemmet så du slipper.',
+  subtitle = 'Lokal, noggrann och personlig.',
   items,
 }: USPRowProps) {
   return (

@@ -6,12 +6,12 @@ export const SERVICES: ServiceData[] = [
     title: 'Lönehantering',
     seoTitle: 'Lönehantering & löneoutsourcing | Wildkull Payroll AB',
     seoDescription:
-      'Outsourca hela eller delar av er lönehantering till en erfaren lönekonsult. Trygg, korrekt och i tid – varje månad. Wildkull Payroll AB.',
-    heroTagline: 'Vi tar hand om lönen – ni får tid över till verksamheten',
+      'Outsourca hela eller delar av er lönehantering till en erfaren lönekonsult. Trygg, korrekt och i tid, varje månad. Wildkull Payroll AB.',
+    heroTagline: 'Korrekta löner utan bekymmer',
     description:
-      'Vi tar hand om hela eller delar av er löneprocess – korrekt, tryggt och i tid. Du får en personlig lönekonsult som känner ert företag och ser till att allt blir rätt varje månad, från tidrapporter till utbetalning och bokföringsunderlag.',
+      'Jag tar hand om lönehanteringen så att du slipper administration, osäkerhet och tidskrävande regelverk. Du får en personlig lönekonsult som känner ert företag och ser till att allt blir rätt varje månad, från tidrapporter till utbetalning och bokföringsunderlag.',
     shortDescription:
-      'Vi tar hand om hela eller delar av er löneprocess – korrekt, tryggt och i tid.',
+      'Jag tar hand om lönehanteringen så att du slipper administration, osäkerhet och tidskrävande regelverk.',
     included: [
       'Löpande lönekörning varje månad',
       'Hantering av tidrapporter, frånvaro och avvikelser',
@@ -26,9 +26,9 @@ export const SERVICES: ServiceData[] = [
     imageSrc: '/images/og/wildkull-og.png',
     keyPoints: [
       {
-        title: 'Rätt lön i tid',
+        title: 'Mindre administration',
         description:
-          'Lönerna blir korrekta och betalas ut i tid – varje månad, helt utan stress för dig.',
+          'Du slipper det tidskrävande regelverket och den löpande löneadministrationen. Korrekt lön i tid är en självklarhet, inte ett löfte.',
       },
       {
         title: 'En personlig kontakt',
@@ -55,7 +55,7 @@ export const SERVICES: ServiceData[] = [
       {
         question: 'Hur fungerar det om någon av våra anställda har en fråga om sin lön?',
         answer:
-          'De kan vända sig direkt till oss. Vi besvarar frågor om lönespecifikationer, semester, avdrag och förmåner på ett pedagogiskt sätt – så slipper ni mellanhanden.',
+          'De kan vända sig direkt till oss. Vi besvarar frågor om lönespecifikationer, semester, avdrag och förmåner på ett pedagogiskt sätt, så slipper ni mellanhanden.',
       },
       {
         question: 'Passar det även mindre företag?',
@@ -67,12 +67,12 @@ export const SERVICES: ServiceData[] = [
   {
     slug: 'interimskonsult',
     title: 'Interimskonsult',
-    seoTitle: 'Interim lönekonsult – tillfälligt stöd | Wildkull Payroll AB',
+    seoTitle: 'Interim lönekonsult, tillfälligt stöd | Wildkull Payroll AB',
     seoDescription:
       'Tillfällig förstärkning till löneavdelningen vid frånvaro, arbetstoppar eller rekrytering. Erfaren interim lönekonsult från Wildkull Payroll AB.',
     heroTagline: 'Tillfällig förstärkning när ni behöver den som mest',
     description:
-      'Tillfällig förstärkning vid frånvaro, arbetstoppar eller rekrytering. När er löneansvariga är sjuk, föräldraledig eller slutar kliver vi in och håller lönen igång – utan att ni tappar tempo eller kvalitet.',
+      'Tillfällig förstärkning vid frånvaro, arbetstoppar eller rekrytering. När er löneansvariga är sjuk, föräldraledig eller slutar kliver vi in och håller lönen igång, utan att ni tappar tempo eller kvalitet.',
     shortDescription:
       'Tillfällig förstärkning vid frånvaro, arbetstoppar eller rekrytering.',
     included: [
@@ -81,7 +81,7 @@ export const SERVICES: ServiceData[] = [
       'Extra resurs vid arbetstoppar och årsavslut',
       'Upplärning och stöd till befintlig personal',
       'Dokumentation av rutiner och processer',
-      'Flexibelt upplägg – på plats eller på distans',
+      'Flexibelt upplägg, på plats eller på distans',
     ],
     badges: ['Snabb start', 'Flexibelt', 'Erfaren'],
     imageSrc: '/images/og/wildkull-og.png',
@@ -99,7 +99,7 @@ export const SERVICES: ServiceData[] = [
       {
         title: 'Du betalar för tiden',
         description:
-          'Hyr in kompetensen exakt så länge ni behöver den – inte en dag längre.',
+          'Hyr in kompetensen exakt så länge ni behöver den, inte en dag längre.',
       },
     ],
     faq: [
@@ -125,7 +125,7 @@ export const SERVICES: ServiceData[] = [
     title: 'Effektivisering',
     seoTitle: 'Effektivisering av löneprocessen | Wildkull Payroll AB',
     seoDescription:
-      'Vi hjälper er att modernisera och effektivisera löneprocessen – bättre rutiner, rätt systemstöd och färre fel. Wildkull Payroll AB.',
+      'Vi hjälper er att modernisera och effektivisera löneprocessen med bättre rutiner, rätt systemstöd och färre fel. Wildkull Payroll AB.',
     heroTagline: 'Modernare rutiner, färre fel och mindre manuellt arbete',
     description:
       'Vi hjälper er att modernisera löneavdelningen och era arbetssätt. Genom att se över rutiner, systemstöd och flöden får ni en löneprocess som tar mindre tid, ger färre fel och blir lättare att lita på.',
@@ -178,21 +178,20 @@ export const SERVICES: ServiceData[] = [
   },
   {
     slug: 'samarbete-redovisningsbyraer',
-    // Föreslagen tjänst – finns inte på kundens nuvarande sida ännu.
-    // Dold från meny/grid tills Veronika bekräftat att hon vill erbjuda den.
-    hidden: true,
+    // Bekräftad av Veronika (mejl + worddokument 2026-06-14) – hon efterfrågade
+    // uttryckligen en ruta om samarbete med redovisningsbyråer. Nu synlig.
     title: 'Samarbete med redovisningsbyråer',
     seoTitle: 'Lönepartner för redovisningsbyråer | Wildkull Payroll AB',
     seoDescription:
       'Bli er byrås lönepartner. Vi tar hand om lönehanteringen till era kunder så att ni kan erbjuda lön utan att bygga egen avdelning. Wildkull Payroll AB.',
-    heroTagline: 'Erbjud era kunder lön – utan att bygga en egen avdelning',
+    heroTagline: 'Erbjud era kunder lön utan att bygga en egen avdelning',
     description:
       'Vi blir er byrås lönepartner och erbjuder lönehantering till era kunder. Ni kan erbjuda ett komplett tjänsteutbud med lön, samtidigt som ni slipper bygga upp och bemanna en egen löneavdelning. Diskret, smidigt och alltid i ert namn.',
     shortDescription:
       'Vi blir er lönepartner och erbjuder lönehantering till era kunder.',
     included: [
       'Lönehantering åt era kunder i ert namn',
-      'Flexibel kapacitet – ni skalar upp och ner efter behov',
+      'Flexibel kapacitet, ni skalar upp och ner efter behov',
       'En fast kontaktperson för byrån',
       'Tydlig ansvarsfördelning och sekretess',
       'Stöd vid kundfrågor om lön',
@@ -209,7 +208,7 @@ export const SERVICES: ServiceData[] = [
       {
         title: 'I ert namn',
         description:
-          'Vi arbetar diskret i bakgrunden – kunden upplever en sömlös tjänst från er byrå.',
+          'Vi arbetar diskret i bakgrunden och kunden upplever en sömlös tjänst från er byrå.',
       },
       {
         title: 'Skala efter behov',

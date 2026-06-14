@@ -41,13 +41,13 @@ const Button = forwardRef<HTMLButtonElement, ButtonProps>(
 
     const variantStyles: Record<ButtonVariant, string> = {
       primary:
-        'bg-navy text-white hover:bg-petrol active:bg-petrol/90 focus-visible:ring-navy shadow-md hover:shadow-lg hover:translate-y-[-1px] tracking-wide',
+        'bg-brand-green text-white hover:bg-brand-green-dark active:bg-brand-green-dark/90 focus-visible:ring-brand-green shadow-md hover:shadow-lg hover:translate-y-[-1px] tracking-wide',
 
       secondary:
-        'bg-white text-navy hover:bg-gray-50 active:bg-gray-100 focus-visible:ring-navy shadow-lg hover:shadow-xl hover:translate-y-[-1px] border border-white/20',
+        'bg-white text-brand-green hover:bg-gray-50 active:bg-gray-100 focus-visible:ring-brand-green shadow-lg hover:shadow-xl hover:translate-y-[-1px] border border-white/20',
 
       outline:
-        'border-2 border-navy text-navy hover:bg-navy hover:text-white active:bg-petrol focus-visible:ring-navy transition-colors',
+        'border-2 border-brand-green text-brand-green hover:bg-brand-green hover:text-white active:bg-brand-green-dark focus-visible:ring-brand-green transition-colors',
 
       ghost:
         'text-white hover:bg-white/15 active:bg-white/25 focus-visible:ring-white focus-visible:ring-offset-0',

@@ -27,15 +27,15 @@ export function Header() {
           : 'bg-white/50 backdrop-blur-sm shadow-none'
       }`}
     >
-      <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-18">
+      <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-20">
         {/* Logo + Företagsnamn */}
         <Link href="/" className="group flex items-center gap-3">
-          <div className="relative h-10 w-11 flex-shrink-0">
+          <div className="relative h-[68px] w-[78px] flex-shrink-0">
             <Image
-              src="/images/owl-crest.png"
+              src="/images/Uggla_Logga2.png"
               alt="Wildkull Payroll AB logotyp"
               fill
-              sizes="44px"
+              sizes="78px"
               className="object-contain"
               priority
             />

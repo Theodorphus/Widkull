@@ -11,7 +11,7 @@ import { serviceIcons } from '@/lib/data/serviceIcons'
 import { BUSINESS } from '@/lib/data/business'
 
 export const metadata: Metadata = {
-  title: 'Våra tjänster – Lönehantering, interim & rådgivning',
+  title: 'Våra tjänster | Lönehantering, interim & rådgivning',
   description:
     'Lönehantering, effektivisering och interimskonsult. Flexibla lönelösningar för företag och organisationer.',
   alternates: {
@@ -34,7 +34,7 @@ export default function TjansterPage() {
             <MaskText>Våra tjänster</MaskText>
           </h1>
           <MemReveal as="p" delay={150} className="mem-fade text-xl text-cream/85 font-light max-w-2xl mx-auto">
-            Flexibla lösningar inom lön, rådgivning och effektivisering – för
+            Flexibla lösningar inom lön, rådgivning och effektivisering för
             företag och organisationer.
           </MemReveal>
         </div>

@@ -7,7 +7,7 @@ import { MaskText } from '@/components/memorial/MemReveal'
 import { BUSINESS } from '@/lib/data/business'
 
 export const metadata: Metadata = {
-  title: 'Integritetspolicy – Wildkull Payroll AB',
+  title: 'Integritetspolicy | Wildkull Payroll AB',
   description:
     'Så hanterar Wildkull Payroll AB dina personuppgifter när du kontaktar oss via webbplatsen. Vi värnar om din integritet och följer GDPR.',
   alternates: {
@@ -62,7 +62,7 @@ export default function IntegritetspolicyPage() {
             <Section title="Vilka uppgifter vi samlar in">
               <p>
                 När du fyller i kontaktformuläret på webbplatsen samlar vi in de uppgifter du
-                själv lämnar – normalt ditt namn, din e-postadress och innehållet i ditt
+                själv lämnar, normalt ditt namn, din e-postadress och innehållet i ditt
                 meddelande. Vi samlar inte in fler uppgifter än de du väljer att dela med dig av.
               </p>
             </Section>

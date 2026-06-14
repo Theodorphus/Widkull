@@ -94,7 +94,7 @@ export function ServicePageTemplate({
       )}
 
       {/* Inline CTA strip */}
-      <Reveal variant="scale" className="bg-navy py-5 px-4 sm:px-6 lg:px-8">
+      <Reveal variant="scale" className="bg-brand-green py-5 px-4 sm:px-6 lg:px-8">
         <div className="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-white font-semibold text-base sm:text-lg text-center sm:text-left">
             Vill du veta mer? Boka ett kostnadsfritt möte så pratar vi om era behov.

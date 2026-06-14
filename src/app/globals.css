@@ -22,10 +22,6 @@
   /* Djup CTA-/sektionsfärg – mörk skogsgrön för kontrast */
   --color-dark-section: #284035;
 
-  /* Primärfärger (mapped till grön-paletten) */
-  --color-navy: #375546;
-  --color-petrol: #284035;
-
   /* Premium grön-palett (hero, sektioner, om, kontakt) */
   --color-forest-deep: #1E2E26;
   --color-forest: #284035;
@@ -72,6 +68,13 @@ h1, h2, h3, h4 {
   letter-spacing: -0.02em;
   font-weight: 700;
   line-height: 1.15;
+}
+
+/* På mobil får rubrikerna lite mer radhöjd så att tvåradiga rubriker andas. */
+@media (max-width: 640px) {
+  h1, h2, h3, h4 {
+    line-height: 1.25;
+  }
 }
 
 h1 {

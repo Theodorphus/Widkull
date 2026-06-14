@@ -54,11 +54,14 @@ export function BokaForm() {
       />
       <div className="grid sm:grid-cols-2 gap-5">
         <Field label="Namn" name="namn" placeholder="För- och efternamn" required />
-        <Field label="Företag" name="foretag" placeholder="Företagsnamn" />
+        <Field label="Företag" name="foretag" placeholder="Företagsnamn" required />
       </div>
       <div className="grid sm:grid-cols-2 gap-5">
         <Field label="E-post" name="email" type="email" placeholder="namn@foretag.se" required />
         <Field label="Telefon" name="telefon" type="tel" placeholder="070-123 45 67" />
+      </div>
+      <div className="grid sm:grid-cols-2 gap-5">
+        <Field label="Organisationsnr" name="orgnr" placeholder="556123-4567" />
       </div>
 
       <div>

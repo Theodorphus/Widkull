@@ -24,15 +24,27 @@ export const BUSINESS = {
   owl: {
     name: 'Löneugglan',
     intro: 'Lönehjälp när du har tid.',
-    firstFree: 'Första frågan är gratis.',
-    /** Öppettider för livechatten – "vanligtvis" eftersom Veronika kan få förhinder. */
-    hoursText: 'Vanligtvis tis, tors & sön 19–20',
-    hoursNote:
-      'Övriga tider svarar Löneugglan på vanliga frågor – eller lämna din fråga i formuläret så återkommer Veronika vid nästa chattillfälle.',
-    eveningText: 'Kvällsöppet',
+    /** Löneugglan är alltid på och svarar på allmänna frågor dygnet runt. */
+    alwaysOn: 'Svarar dygnet runt',
+    /** Specifika frågor mejlas till Veronika – hon återkommer inom ett dygn. */
+    replyTime: 'Veronika svarar på personliga frågor inom 24 timmar',
+    replyNote:
+      'Löneugglan svarar direkt på allmänna frågor. För frågor om just din situation lämnar du en rad i formuläret, så hör Veronika av sig inom 24 timmar.',
     topics: ['lön', 'förmåner', 'semester', 'sjukfrånvaro och ledigheter', 'anställningar'],
   },
-  noHiddenFees: 'Tydliga villkor och en personlig kontakt – inga överraskningar.',
+  noHiddenFees: 'Tydliga villkor och en personlig kontakt, inga överraskningar.',
+  /** Prissättning. */
+  priceFrom: 'Från 199 kr/mån per lönespecifikation',
+  /**
+   * Tidsbegränsat kampanjerbjudande. Visas på startsidan.
+   * Sätt `active: false` när kampanjen (juli–september) löpt ut.
+   */
+  offer: {
+    active: true,
+    label: 'Just nu',
+    headline: 'Första månaden gratis för nya kunder',
+    text: 'Spara tid redan första månaden. Vi sköter allt från lönebesked till rapportering. Under juli, augusti och september bjuder vi nya kunder på första månadens lönehantering, så du får prova hur det känns att lämna över utan kostnad.',
+  },
   facebook: 'https://www.facebook.com/wildkullpayroll',
   instagram: 'https://www.instagram.com/wildkullpayroll',
 } as const
