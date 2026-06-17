@@ -15,8 +15,8 @@ export function Footer() {
           {/* Företagsinfo */}
           <div className="md:col-span-1">
             <div className="flex items-center gap-3 mb-4">
-              <div className="relative h-[68px] w-[78px] flex-shrink-0">
-                <Image src="/images/Uggla_Logga2.png" alt="" fill sizes="78px" className="object-contain" />
+              <div className="relative h-[84px] w-[100px] flex-shrink-0">
+                <Image src="/images/Logga22-bright.png" alt="" fill sizes="100px" className="object-contain" />
               </div>
               <span className="font-display font-extrabold text-cream text-[15px] leading-tight">
                 {BUSINESS.name}

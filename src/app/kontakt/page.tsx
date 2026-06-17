@@ -99,12 +99,12 @@ export default function KontaktPage() {
         <div id="loneugglan-fraga" className="max-w-6xl mx-auto mt-10 scroll-mt-24">
           <div className="bg-white rounded-2xl border border-[#E6E2D5] p-6 sm:p-8 shadow-[0_4px_24px_rgba(44,71,51,0.06)]">
             <div className="mb-6 flex items-start gap-4">
-              <div className="relative h-[68px] w-[78px] flex-shrink-0">
+              <div className="relative h-[84px] w-[100px] flex-shrink-0">
                 <Image
-                  src="/images/Uggla_Logga2.png"
+                  src="/images/Logga22-bright.png"
                   alt="Löneugglan"
                   fill
-                  sizes="78px"
+                  sizes="100px"
                   className="object-contain"
                 />
               </div>

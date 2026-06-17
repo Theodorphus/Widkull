@@ -5,6 +5,7 @@ import { OfferBanner } from '@/components/home/OfferBanner'
 import { OwlSection } from '@/components/home/OwlSection'
 import { ServicesGrid } from '@/components/home/ServicesGrid'
 import { USPRow } from '@/components/sections/USPRow'
+import { PricingSection } from '@/components/home/PricingSection'
 import { CTABanner } from '@/components/home/CTABanner'
 
 export const metadata: Metadata = {
@@ -63,7 +64,10 @@ export default function Home() {
         ]}
       />
 
-      {/* 5. Avslutande CTA – boka möte */}
+      {/* 5. Pris – transparent prisbild */}
+      <PricingSection />
+
+      {/* 6. Avslutande CTA – boka möte */}
       <CTABanner />
     </>
   )

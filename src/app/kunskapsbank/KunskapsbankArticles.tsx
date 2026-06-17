@@ -64,6 +64,14 @@ const ARTICLES: Article[] = [
           text="Lönen och arbetsgivardeklarationen (AGI) måste överensstämma. Om fel upptäcks i efterhand krävs ofta rättelser och extra arbete."
           consequence="Onödig administration och ökad risk för felrapportering."
         />
+        <p>
+          När lönerna blir rätt från början sparar du både tid och pengar. Och
+          dina medarbetare känner sig trygga.
+        </p>
+        <ClosingNote
+          text="Vill du slippa rättelser och osäkerhet? Kontakta oss på Wildkull Payroll."
+          cta="Kontakta oss"
+        />
       </div>
     ),
   },
@@ -89,13 +97,17 @@ const ARTICLES: Article[] = [
           Många företagare blir överraskade över den verkliga kostnaden när de ska
           anställa sin första medarbetare eller planera för tillväxt.
         </p>
+        <p className="font-semibold text-[#23332A]">
+          En anställd med 30 000 kr i lön kostar ofta 45 000–50 000 kr i
+          verkligheten. Jag hjälper dig räkna exakt för just ditt företag.
+        </p>
         <ClosingNote text="Funderar du på att anställa, eller vill du förstå vad dina medarbetare faktiskt kostar företaget? Jag hjälper dig gärna att räkna på det." />
       </div>
     ),
   },
   {
     tag: 'Semester',
-    title: 'Semesterlön utan huvudvärk',
+    title: 'Semester och semesterlön utan krångel',
     excerpt: 'Semesterreglerna är inte alltid så enkla som de verkar.',
     body: (
       <div className="space-y-4">
@@ -127,7 +139,14 @@ const ARTICLES: Article[] = [
           Att hantera semester korrekt handlar inte bara om att följa reglerna – det
           ger också trygghet för både arbetsgivare och medarbetare.
         </p>
-        <ClosingNote text="Känner du dig osäker på semesterhanteringen? Jag hjälper företag att få kontroll på både semesterberäkningar och semesterskulder." />
+        <p>
+          Felaktig semesterhantering kan snabbt bli dyrt, både i tid och pengar.
+          Jag hjälper dig undvika fallgroparna.
+        </p>
+        <ClosingNote
+          text="Känner du dig osäker på semesterhanteringen? Jag hjälper företag att få kontroll på både semesterberäkningar och semesterskulder."
+          cta="Osäker på semesterreglerna? Få hjälp"
+        />
       </div>
     ),
   },
@@ -168,6 +187,10 @@ const ARTICLES: Article[] = [
           Att anlita en lönekonsult handlar inte bara om att spara tid. Det handlar
           också om att skapa trygghet och säkerställa att lönerna blir rätt – varje
           gång.
+        </p>
+        <p>
+          De flesta företag sparar 5–10 timmar i månaden när de lämnar över
+          lönerna, och slipper oron för att något blir fel.
         </p>
         <ClosingNote text="Vill du veta hur mycket tid du skulle kunna frigöra genom att lämna över lönehanteringen? Hör gärna av dig för ett förutsättningslöst samtal." />
       </div>
@@ -227,7 +250,7 @@ function MistakeBlock({
   )
 }
 
-function ClosingNote({ text }: { text: string }) {
+function ClosingNote({ text, cta = 'Hör av dig' }: { text: string; cta?: string }) {
   return (
     <div className="mt-2 rounded-xl bg-[#F3F1E9] border border-[#E6E2D5] p-4">
       <p className="text-[#23332A]">{text}</p>
@@ -235,7 +258,7 @@ function ClosingNote({ text }: { text: string }) {
         href="/kontakt"
         className="mt-3 inline-flex items-center gap-2 text-brand-green font-semibold text-sm hover:gap-3 transition-all"
       >
-        Hör av dig
+        {cta}
         <ArrowRight size={16} />
       </Link>
     </div>

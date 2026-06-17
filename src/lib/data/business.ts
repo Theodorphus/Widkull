@@ -36,6 +36,21 @@ export const BUSINESS = {
   /** Prissättning. */
   priceFrom: 'Från 199 kr/mån per lönespecifikation',
   /**
+   * Prissektion på startsidan – transparent prisbild enligt Veronikas önskemål.
+   * Beloppen är medvetet ungefärliga (typiskt spann), inte ett bindande pris.
+   */
+  pricing: {
+    heading: 'Vad kostar det att anlita Wildkull Payroll?',
+    perSpecLabel: 'Pris per lönespecifikation',
+    perSpecValue: 'Från 199 kr',
+    note: 'Systemkostnader och eventuella tilläggstjänster tillkommer.',
+    typicalLabel: 'Vad brukar det landa på?',
+    typicalRange: '1 500–3 000 kr/mån',
+    typicalText:
+      'De flesta av våra kunder ligger mellan 1 500 och 3 000 kr/mån, beroende på antal anställda och vilka tjänster som ingår.',
+    cta: 'Vill du veta vad det skulle kosta för ditt företag? Skicka ett meddelande',
+  },
+  /**
    * Tidsbegränsat kampanjerbjudande. Visas på startsidan.
    * Sätt `active: false` när kampanjen (juli–september) löpt ut.
    */

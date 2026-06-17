@@ -85,7 +85,7 @@ export function LoneugglanChat() {
           ...base,
           {
             role: 'assistant',
-            content: `Oj, något gick fel just nu. Försök gärna igen, eller mejla oss på ${BUSINESS.email} så återkommer ${BUSINESS.owner.split(' ')[0]}.`,
+            content: `Oj, något gick fel just nu. Försök gärna igen, eller mejla oss på ${BUSINESS.email} så återkommer ${BUSINESS.shortName}.`,
           },
         ]
       })
@@ -176,7 +176,7 @@ export function LoneugglanChat() {
             <p className="mt-2 text-[11px] text-gray-400 text-center">
               Allmän vägledning. För ditt specifika fall,{' '}
               <Link href="/kontakt" className="underline hover:text-brand-green" onClick={() => setOpen(false)}>
-                kontakta {BUSINESS.owner.split(' ')[0]}
+                kontakta {BUSINESS.shortName}
               </Link>
               .
             </p>

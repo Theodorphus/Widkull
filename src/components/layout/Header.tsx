@@ -30,12 +30,12 @@ export function Header() {
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-20">
         {/* Logo + Företagsnamn */}
         <Link href="/" className="group flex items-center gap-3">
-          <div className="relative h-[68px] w-[78px] flex-shrink-0">
+          <div className="relative h-[76px] w-[92px] flex-shrink-0">
             <Image
-              src="/images/Uggla_Logga2.png"
+              src="/images/Logga22-bright.png"
               alt="Wildkull Payroll AB logotyp"
               fill
-              sizes="78px"
+              sizes="92px"
               className="object-contain"
               priority
             />
