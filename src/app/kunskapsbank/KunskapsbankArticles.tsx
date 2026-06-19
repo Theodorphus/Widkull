@@ -99,9 +99,9 @@ const ARTICLES: Article[] = [
         </p>
         <p className="font-semibold text-[#23332A]">
           En anställd med 30 000 kr i lön kostar ofta 45 000–50 000 kr i
-          verkligheten. Jag hjälper dig räkna exakt för just ditt företag.
+          verkligheten. Vi hjälper dig räkna exakt för just ditt företag.
         </p>
-        <ClosingNote text="Funderar du på att anställa, eller vill du förstå vad dina medarbetare faktiskt kostar företaget? Jag hjälper dig gärna att räkna på det." />
+        <ClosingNote text="Funderar du på att anställa, eller vill du förstå vad dina medarbetare faktiskt kostar företaget? Vi hjälper dig gärna att räkna på det." />
       </div>
     ),
   },
@@ -141,10 +141,10 @@ const ARTICLES: Article[] = [
         </p>
         <p>
           Felaktig semesterhantering kan snabbt bli dyrt, både i tid och pengar.
-          Jag hjälper dig undvika fallgroparna.
+          Vi hjälper dig undvika fallgroparna.
         </p>
         <ClosingNote
-          text="Känner du dig osäker på semesterhanteringen? Jag hjälper företag att få kontroll på både semesterberäkningar och semesterskulder."
+          text="Känner du dig osäker på semesterhanteringen? Vi hjälper företag att få kontroll på både semesterberäkningar och semesterskulder."
           cta="Osäker på semesterreglerna? Få hjälp"
         />
       </div>

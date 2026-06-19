@@ -1,9 +1,7 @@
 import { Metadata } from 'next'
-import Image from 'next/image'
 import { Mail, MapPin, Clock, BadgeCheck } from 'lucide-react'
 import { Breadcrumbs } from '@/components/ui/Breadcrumbs'
 import { BokaForm } from './BokaForm'
-import { OwlQuestionForm } from '@/components/owl/OwlQuestionForm'
 import { MeshBackground } from '@/components/premium/MeshBackground'
 import { Parallax } from '@/components/premium/Scroll'
 import { MaskText, MemReveal } from '@/components/memorial/MemReveal'
@@ -92,34 +90,6 @@ export default function KontaktPage() {
               </p>
             </div>
             <BokaForm />
-          </div>
-        </div>
-
-        {/* Fråga till Löneugglan när livechatten är stängd */}
-        <div id="loneugglan-fraga" className="max-w-6xl mx-auto mt-10 scroll-mt-24">
-          <div className="bg-white rounded-2xl border border-[#E6E2D5] p-6 sm:p-8 shadow-[0_4px_24px_rgba(44,71,51,0.06)]">
-            <div className="mb-6 flex items-start gap-4">
-              <div className="relative h-[84px] w-[100px] flex-shrink-0">
-                <Image
-                  src="/images/Logga22-bright.png"
-                  alt="Löneugglan"
-                  fill
-                  sizes="100px"
-                  className="object-contain"
-                />
-              </div>
-              <div>
-                <h2 className="text-2xl font-bold text-[#23332A] mb-1">
-                  Skicka en fråga till Veronika
-                </h2>
-                <p className="text-gray-500 text-sm">
-                  Löneugglan svarar direkt i chatten dygnet runt. Gäller frågan din
-                  egen situation lämnar du den här, så svarar Veronika personligen
-                  inom 24 timmar.
-                </p>
-              </div>
-            </div>
-            <OwlQuestionForm />
           </div>
         </div>
       </div>

@@ -70,7 +70,7 @@ export function FAQSection({
             Har du fler frågor?
           </h3>
           <p className="text-gray-700 mb-6 max-w-2xl mx-auto">
-            Hör av dig så svarar jag gärna och ger dig ett personligt prisförslag inom 24 timmar.
+            Hör av dig så svarar vi gärna och ger dig ett personligt prisförslag inom 24 timmar.
           </p>
           <Link href="/kontakt#offert">
             <Button variant="primary" size="lg">

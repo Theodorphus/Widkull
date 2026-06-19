@@ -35,9 +35,15 @@ export function LoneugglanChat() {
     scrollRef.current?.scrollTo({ top: scrollRef.current.scrollHeight, behavior: 'smooth' })
   }, [messages, busy])
 
-  // Fokusera inmatningen när fönstret öppnas.
+  // Fokusera inmatningen när fönstret öppnas, och stäng på Escape.
   useEffect(() => {
-    if (open) inputRef.current?.focus()
+    if (!open) return
+    inputRef.current?.focus()
+    const onEsc = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') setOpen(false)
+    }
+    document.addEventListener('keydown', onEsc)
+    return () => document.removeEventListener('keydown', onEsc)
   }, [open])
 
   async function send() {

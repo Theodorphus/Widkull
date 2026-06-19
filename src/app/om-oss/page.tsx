@@ -132,14 +132,14 @@ export default function OmOss() {
             <h3 className="font-display text-2xl font-bold mb-4">Våra värderingar</h3>
             <p className="text-cream/85 leading-relaxed">
               Noggrannhet, ständig förbättring och ett starkt engagemang. Med skräddarsydda
-              lösningar anpassade efter just ditt företags behov erbjuder jag både
+              lösningar anpassade efter just ditt företags behov erbjuder vi både
               helhetslösningar och stöd inom specifika delar av lönehanteringen, med dina behov
               i fokus och målet att skapa långsiktiga samarbeten.
             </p>
           </div>
 
           <div className="bg-[#F3F1E9] p-8 sm:p-10 rounded-2xl border border-[#E6E2D5]">
-            <h3 className="text-2xl font-bold text-[#23332A] mb-6">Det här står jag för</h3>
+            <h3 className="text-2xl font-bold text-[#23332A] mb-6">Det här står vi för</h3>
             <ul className="space-y-5">
               {VALUES.map((v) => (
                 <li key={v.title} className="flex gap-4">

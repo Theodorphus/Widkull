@@ -26,10 +26,10 @@ export const BUSINESS = {
     intro: 'Lönehjälp när du har tid.',
     /** Löneugglan är alltid på och svarar på allmänna frågor dygnet runt. */
     alwaysOn: 'Svarar dygnet runt',
-    /** Specifika frågor mejlas till Veronika – hon återkommer inom ett dygn. */
-    replyTime: 'Veronika svarar på personliga frågor inom 24 timmar',
+    /** Specifika frågor mejlas in – vi återkommer inom ett dygn. */
+    replyTime: 'Vi svarar på personliga frågor inom 24 timmar',
     replyNote:
-      'Löneugglan svarar direkt på allmänna frågor. För frågor om just din situation lämnar du en rad i formuläret, så hör Veronika av sig inom 24 timmar.',
+      'Löneugglan svarar direkt på allmänna frågor. För frågor om just din situation lämnar du en rad i formuläret, så hör vi av oss inom 24 timmar.',
     topics: ['lön', 'förmåner', 'semester', 'sjukfrånvaro och ledigheter', 'anställningar'],
   },
   noHiddenFees: 'Tydliga villkor och en personlig kontakt, inga överraskningar.',

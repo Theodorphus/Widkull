@@ -35,7 +35,7 @@ export function BokaForm() {
         </div>
         <h3 className="text-xl font-bold text-[#23332A] mb-2">Tack för din förfrågan!</h3>
         <p className="text-gray-600 max-w-sm">
-          Ditt meddelande har skickats till Veronika, som återkommer till dig inom kort.
+          Ditt meddelande har skickats. Vi återkommer till dig inom kort.
         </p>
       </div>
     )
@@ -65,10 +65,11 @@ export function BokaForm() {
       </div>
 
       <div>
-        <label className="block text-sm font-semibold text-[#23332A] mb-1.5">
+        <label htmlFor="amne" className="block text-sm font-semibold text-[#23332A] mb-1.5">
           Vad gäller det?
         </label>
         <select
+          id="amne"
           name="amne"
           className="w-full px-4 py-3 rounded-lg border border-[#D9D4C5] bg-white text-gray-700 outline-none focus:border-brand-green focus:ring-2 focus:ring-brand-green/20 transition-colors"
         >
@@ -81,10 +82,11 @@ export function BokaForm() {
       </div>
 
       <div>
-        <label className="block text-sm font-semibold text-[#23332A] mb-1.5">
+        <label htmlFor="meddelande" className="block text-sm font-semibold text-[#23332A] mb-1.5">
           Meddelande
         </label>
         <textarea
+          id="meddelande"
           name="meddelande"
           rows={5}
           placeholder="Berätta kort om ert företag och vad ni behöver hjälp med…"

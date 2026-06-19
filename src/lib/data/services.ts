@@ -9,9 +9,9 @@ export const SERVICES: ServiceData[] = [
       'Outsourca hela eller delar av er lönehantering till en erfaren lönekonsult. Trygg, korrekt och i tid, varje månad. Wildkull Payroll AB.',
     heroTagline: 'Korrekta löner utan bekymmer',
     description:
-      'Jag tar hand om lönehanteringen så att du slipper administration, osäkerhet och tidskrävande regelverk. Du får en personlig lönekonsult som känner ert företag och ser till att allt blir rätt varje månad, från tidrapporter till utbetalning och bokföringsunderlag.',
+      'Vi tar hand om lönehanteringen så att du slipper administration, osäkerhet och tidskrävande regelverk. Du får en personlig lönekonsult som känner ert företag och ser till att allt blir rätt varje månad, från tidrapporter till utbetalning och bokföringsunderlag.',
     shortDescription:
-      'Jag tar hand om lönehanteringen så att du slipper administration, osäkerhet och tidskrävande regelverk.',
+      'Vi tar hand om lönehanteringen så att du slipper administration, osäkerhet och tidskrävande regelverk.',
     included: [
       'Löpande lönekörning varje månad',
       'Hantering av tidrapporter, frånvaro och avvikelser',
