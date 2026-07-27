@@ -12,6 +12,15 @@ export const serviceIcons: Record<string, React.ReactNode> = {
       <line x1="14" y1="18" x2="16" y2="18" />
     </svg>
   ),
+  // Affärsstöd – portfölj/briefcase (samlat affärsstöd: lön, ekonomi & HR)
+  affarsstod: (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+      <rect x="2" y="7" width="20" height="14" rx="2" />
+      <path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2" />
+      <line x1="2" y1="13" x2="22" y2="13" />
+      <line x1="12" y1="11" x2="12" y2="15" />
+    </svg>
+  ),
   // Interimskonsult – personer / team
   interimskonsult: (
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">

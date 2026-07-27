@@ -60,6 +60,18 @@ export const BUSINESS = {
     headline: 'Första månaden gratis för nya kunder',
     text: 'Spara tid redan första månaden. Vi sköter allt från lönebesked till rapportering. Under juli, augusti och september bjuder vi nya kunder på första månadens lönehantering, så du får prova hur det känns att lämna över utan kostnad.',
   },
+  /**
+   * Tidsbegränsad mäss-/eventnotis. Visas på startsidan när `active: true`.
+   * Sätt `active: false` efter mässan (efter 12 september 2026) så försvinner
+   * notisen automatiskt.
+   */
+  event: {
+    active: true,
+    label: 'Vi ställer ut',
+    headline: 'Träffa oss på Enköpingsmässan',
+    text: 'Den 11–12 september ställer vi ut på Enköpingsmässan. Kom förbi och säg hej, så pratar vi lön, ekonomi och HR – och hur vi kan hjälpa just ditt företag. Vi ses där!',
+    dates: '11–12 september',
+  },
   facebook: 'https://www.facebook.com/wildkullpayroll',
   instagram: 'https://www.instagram.com/wildkullpayroll',
 } as const

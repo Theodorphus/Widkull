@@ -65,6 +65,71 @@ export const SERVICES: ServiceData[] = [
     ],
   },
   {
+    slug: 'affarsstod',
+    // Ny tjänst enligt Veronikas önskemål (2026-07): brett affärsstöd med lön,
+    // ekonomi och HR – kunden kan välja hela paketet eller en enskild del.
+    // Ligger jämsides med övriga tjänster (lönehantering är fortsatt huvudsyssla).
+    title: 'Affärsstöd',
+    seoTitle: 'Affärsstöd – lön, ekonomi & HR | Wildkull Payroll AB',
+    seoDescription:
+      'Ett samlat affärsstöd med lön, ekonomi och HR. Välj hela paketet eller bara den del du behöver – allt levererat av en erfaren konsult. Wildkull Payroll AB.',
+    heroTagline: 'Lön, ekonomi och HR – hela paketet eller bara det du behöver',
+    description:
+      'Ett samlat affärsstöd där lönehantering, ekonomi och HR finns under samma tak. Du kan välja hela paketet eller bara en av delarna, precis efter vad ditt företag behöver just nu. Du får en och samma kontaktperson som känner ert bolag, oavsett om det gäller lönekörningen, den löpande bokföringen eller ett klurigt personalärende.',
+    shortDescription:
+      'Lön, ekonomi och HR under samma tak. Välj hela paketet eller bara den del du behöver.',
+    included: [
+      'Lönehantering – löpande lönekörning, rapportering och support',
+      'Ekonomi – löpande bokföring, fakturering och rapportering',
+      'HR – anställningsavtal, rutiner, policyer och mallar',
+      'Rådgivning kring personalfrågor, arbetsmiljö och arbetsrätt på grundläggande nivå',
+      'Stöd vid introduktion, avslut, rehabilitering och uppföljning',
+      'Välj hela paketet eller en enskild del efter behov',
+      'En och samma kontaktperson för hela ert affärsstöd',
+    ],
+    badges: ['Lön', 'Ekonomi', 'HR', 'Valbart'],
+    imageSrc: '/images/og/wildkull-og.png',
+    keyPoints: [
+      {
+        title: 'Allt på ett ställe',
+        description:
+          'Samla lön, ekonomi och HR hos en och samma partner. Färre kontakter, mindre administration och en helhet som hänger ihop.',
+      },
+      {
+        title: 'Du väljer omfattningen',
+        description:
+          'Ta hela paketet eller bara den del du behöver just nu. Du kan alltid utöka i takt med att företaget växer.',
+      },
+      {
+        title: 'En personlig kontakt',
+        description:
+          'Du får en fast kontaktperson som kan ert företag och håller ihop helheten, inte olika handläggare för varje fråga.',
+      },
+    ],
+    faq: [
+      {
+        question: 'Måste vi ta hela paketet?',
+        answer:
+          'Nej. Du kan välja lön, ekonomi eller HR var för sig, eller kombinera de delar du behöver. Många börjar med en del och utökar sedan i takt med att behovet växer.',
+      },
+      {
+        question: 'Vad ingår i ekonomidelen?',
+        answer:
+          'Vi hjälper er med löpande bokföring, fakturering och rapportering, så att den dagliga ekonomin flyter på och underlagen alltid är i ordning.',
+      },
+      {
+        question: 'Vad kan ni hjälpa till med inom HR?',
+        answer:
+          'Vi tar fram och ser över anställningsavtal, rutiner, policyer och mallar, ger rådgivning kring personalfrågor, arbetsmiljö och arbetsrätt på grundläggande nivå, och stöttar vid introduktion, avslut, rehabilitering och uppföljning.',
+      },
+      {
+        question: 'Vad kostar affärsstödet?',
+        answer:
+          'Det beror på vilka delar ni väljer och företagets storlek. Hör av dig så tar vi ett samtal och sätter ihop ett upplägg som passar just er.',
+      },
+    ],
+  },
+  {
     slug: 'interimskonsult',
     title: 'Interimskonsult',
     seoTitle: 'Interim lönekonsult, tillfälligt stöd | Wildkull Payroll AB',
@@ -242,6 +307,7 @@ export const SERVICES: ServiceData[] = [
  */
 const SERVICE_ORDER = [
   'lonehantering',
+  'affarsstod',
   'effektivisering',
   'interimskonsult',
   'samarbete-redovisningsbyraer',

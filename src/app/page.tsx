@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { ShieldCheck, Zap, UserRound, Award } from 'lucide-react'
 import { Hero } from '@/components/home/Hero'
 import { OfferBanner } from '@/components/home/OfferBanner'
+import { EventBanner } from '@/components/home/EventBanner'
 import { OwlSection } from '@/components/home/OwlSection'
 import { ServicesGrid } from '@/components/home/ServicesGrid'
 import { USPRow } from '@/components/sections/USPRow'
@@ -25,6 +26,9 @@ export default function Home() {
 
       {/* 2. Kampanj – Första månaden gratis (juli–september) */}
       <OfferBanner />
+
+      {/* 2b. Eventnotis – Enköpingsmässan 11–12 september (tas bort efteråt) */}
+      <EventBanner />
 
       {/* 3. Fråga Löneugglan – signatursektion */}
       <OwlSection />
