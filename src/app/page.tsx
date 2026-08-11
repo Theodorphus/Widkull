@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   description:
     'Outsourcing, interimstöd, effektivisering och samarbete med redovisningsbyråer. Lönehantering med en personlig och erfaren lönekonsult.',
   alternates: {
-    canonical: 'https://wildkullpayroll.se',
+    canonical: 'https://www.wildkullpayroll.se',
   },
 }
 

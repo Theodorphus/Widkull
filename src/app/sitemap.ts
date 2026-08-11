@@ -1,7 +1,7 @@
 import { MetadataRoute } from 'next'
 import { VISIBLE_SERVICES } from '@/lib/data/services'
 
-const BASE_URL = 'https://wildkullpayroll.se'
+const BASE_URL = 'https://www.wildkullpayroll.se'
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date()

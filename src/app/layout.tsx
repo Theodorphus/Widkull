@@ -37,7 +37,7 @@ const playfair = Playfair_Display({
  * Global SEO-konfiguration för Wildkull Payroll AB
  */
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL
-  || 'https://wildkullpayroll.se'
+  || 'https://www.wildkullpayroll.se'
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),

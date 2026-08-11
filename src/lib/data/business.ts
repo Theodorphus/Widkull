@@ -13,7 +13,7 @@ export const BUSINESS = {
   // OBS: Telefonnummer saknas medvetet – lägg till Veronikas riktiga nummer
   // här (phone + phoneHref) när hon vill visa det på sajten.
   email: 'info@wildkullpayroll.se',
-  siteUrl: 'https://wildkullpayroll.se',
+  siteUrl: 'https://www.wildkullpayroll.se',
   /** Bolagsuppgifter. */
   orgNumber: '559408-8857',
   bankgiro: '5941-5125',
