@@ -16,7 +16,7 @@ export function Footer() {
           <div className="md:col-span-1">
             <div className="flex items-center gap-3 mb-4">
               <div className="relative h-[84px] w-[100px] flex-shrink-0">
-                <Image src="/images/Logga22-bright.png" alt="" fill sizes="100px" className="object-contain" />
+                <Image src="/images/Logga23-transparent.png" alt="" fill sizes="100px" className="object-contain" />
               </div>
               <span className="font-display font-extrabold text-cream text-[15px] leading-tight">
                 {BUSINESS.name}

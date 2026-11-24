@@ -32,7 +32,7 @@ export function Header() {
         <Link href="/" className="group flex items-center gap-3">
           <div className="relative h-[76px] w-[92px] flex-shrink-0">
             <Image
-              src="/images/Logga22-bright.png"
+              src="/images/Logga23-transparent.png"
               alt="Wildkull Payroll AB logotyp"
               fill
               sizes="92px"
