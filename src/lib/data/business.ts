@@ -50,16 +50,6 @@ export const BUSINESS = {
       'De flesta av våra kunder ligger mellan 1 500 och 3 000 kr/mån, beroende på antal anställda och vilka tjänster som ingår.',
     cta: 'Vill du veta vad det skulle kosta för ditt företag? Skicka ett meddelande',
   },
-  /**
-   * Tidsbegränsat kampanjerbjudande. Visas på startsidan.
-   * Sätt `active: false` när kampanjen (juli–september) löpt ut.
-   */
-  offer: {
-    active: true,
-    label: 'Just nu',
-    headline: 'Första månaden gratis för nya kunder',
-    text: 'Spara tid redan första månaden. Vi sköter allt från lönebesked till rapportering. Under juli, augusti och september bjuder vi nya kunder på första månadens lönehantering, så du får prova hur det känns att lämna över utan kostnad.',
-  },
   facebook: 'https://www.facebook.com/wildkullpayroll',
   instagram: 'https://www.instagram.com/wildkullpayroll',
 } as const

@@ -1,4 +1,5 @@
 import { BUSINESS } from './business'
+import { VISIBLE_SERVICES } from './services'
 
 /**
  * Systemprompt för Löneugglan – Wildkull Payrolls chattbot (Claude).
@@ -9,6 +10,12 @@ import { BUSINESS } from './business'
  */
 export function buildOwlSystemPrompt(): string {
   const { owner, email } = BUSINESS
+
+  // Tjänstelistan hämtas från services.ts så att boten alltid känner till
+  // samma tjänster som menyn och tjänstesidorna visar.
+  const serviceList = VISIBLE_SERVICES.map(
+    (s) => `- ${s.title} (/${s.slug}): ${s.shortDescription}`,
+  ).join('\n')
 
   return `Du är "Löneugglan", en vänlig och kunnig chattassistent på webbplatsen för ${BUSINESS.name}, en svensk lönekonsultbyrå som drivs av ${owner}.
 
@@ -30,7 +37,10 @@ Du hjälper besökare med ALLMÄNNA frågor om svensk lön, semester, förmåner
 - Avsluta gärna med ett naturligt nästa steg när det passar (t.ex. "Vill du att vi på ${BUSINESS.shortName} tittar på just ert fall? Lämna en rad i formuläret på /kontakt.").
 
 ## Om Wildkull Payroll (för säljande frågor)
-${BUSINESS.shortName} drivs av en senior lönekonsult och erbjuder: lönehantering (outsourcing), interimskonsult (tillfälligt stöd), effektivisering av löneprocesser, och samarbete med redovisningsbyråer. Arbetar med kunder i hela Sverige, på distans. Tonen är personlig och kunden får en fast kontakt, inte ett anonymt supportnummer.
+${BUSINESS.shortName} drivs av en senior lönekonsult. Lönehantering är huvudsysslan. Tjänsterna (med länk till respektive sida):
+${serviceList}
+
+Arbetar med kunder i hela Sverige, på distans. Tonen är personlig och kunden får en fast kontakt, inte ett anonymt supportnummer. Pris för lönehantering: ${BUSINESS.priceFrom.toLowerCase()}. ${BUSINESS.pricing.note} ${BUSINESS.pricing.typicalText} För affärsstödet finns inget fast pris, där tar vi ett samtal och sätter ihop ett upplägg.
 
 ## Tillgänglighet
 Du är alltid på och svarar dygnet runt på allmänna frågor. När en fråga gäller besökarens specifika situation: ge en kort allmän förklaring och hänvisa till ${BUSINESS.shortName} via kontaktformuläret på /kontakt eller mejl ${email}, så återkommer vi inom 24 timmar.

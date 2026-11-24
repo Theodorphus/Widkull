@@ -9,7 +9,7 @@ export function StructuredData() {
     image: `${BUSINESS.siteUrl}/images/og/wildkull-og.png`,
     logo: `${BUSINESS.siteUrl}/images/logo-full.png`,
     description:
-      'Lönehantering, interimstöd, effektivisering och samarbete med redovisningsbyråer. Lönehantering som skapar trygghet och frigör tid.',
+      'Lönehantering, affärsstöd med ekonomi och HR, interimstöd, effektivisering och samarbete med redovisningsbyråer. Lönehantering som skapar trygghet och frigör tid.',
     url: BUSINESS.siteUrl,
     email: BUSINESS.email,
     foundingDate: '2023',
@@ -18,7 +18,7 @@ export function StructuredData() {
       addressCountry: 'SE',
     },
     areaServed: { '@type': 'Country', name: 'Sverige' },
-    knowsAbout: ['Lönehantering', 'Löneoutsourcing', 'HR', 'Lönerådgivning'],
+    knowsAbout: ['Lönehantering', 'Löneoutsourcing', 'Bokföring', 'HR', 'Lönerådgivning'],
     sameAs: [BUSINESS.facebook, BUSINESS.instagram],
   }
 

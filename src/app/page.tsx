@@ -1,7 +1,6 @@
 import type { Metadata } from 'next'
 import { ShieldCheck, Zap, UserRound, Award } from 'lucide-react'
 import { Hero } from '@/components/home/Hero'
-import { OfferBanner } from '@/components/home/OfferBanner'
 import { OwlSection } from '@/components/home/OwlSection'
 import { ServicesGrid } from '@/components/home/ServicesGrid'
 import { USPRow } from '@/components/sections/USPRow'
@@ -11,7 +10,7 @@ import { CTABanner } from '@/components/home/CTABanner'
 export const metadata: Metadata = {
   title: 'Wildkull Payroll AB | Lönehantering som skapar trygghet och frigör tid',
   description:
-    'Outsourcing, interimstöd, effektivisering och samarbete med redovisningsbyråer. Lönehantering med en personlig och erfaren lönekonsult.',
+    'Löneoutsourcing, affärsstöd med ekonomi och HR, interimstöd och effektivisering. Lönehantering med en personlig och erfaren lönekonsult.',
   alternates: {
     canonical: 'https://www.wildkullpayroll.se',
   },
@@ -23,13 +22,10 @@ export default function Home() {
       {/* 1. Hero */}
       <Hero />
 
-      {/* 2. Kampanj – Första månaden gratis (juli–september) */}
-      <OfferBanner />
-
-      {/* 3. Fråga Löneugglan – signatursektion */}
+      {/* 2. Fråga Löneugglan – signatursektion */}
       <OwlSection />
 
-      {/* 3. Tjänster – fyra kort */}
+      {/* 3. Tjänster – kort per synlig tjänst */}
       <ServicesGrid />
 
       {/* 4. Därför väljer företag Wildkull */}
